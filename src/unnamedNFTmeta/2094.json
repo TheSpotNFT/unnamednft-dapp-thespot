@@ -1,0 +1,40 @@
+{
+  "name": "UnnamedNFT #2094",
+  "description": "No discord, no twitter, no roadmap, no utiltiy #unnamedNFT",
+  "image": "https://gateway.pinata.cloud/ipfs/Qmf67K5CNq95cxD4EwgN6XsuSGpDDgYHikvGWzBGAownLP/2094.png",
+  "edition": 2094,
+  "attributes": [
+    {
+      "trait_type": "background",
+      "value": "light blue"
+    },
+    {
+      "trait_type": "eyes",
+      "value": "vampire"
+    },
+    {
+      "trait_type": "mouth",
+      "value": "cig"
+    },
+    {
+      "trait_type": "hat",
+      "value": "neon green"
+    },
+    {
+      "trait_type": "skin",
+      "value": "neon green"
+    },
+    {
+      "trait_type": "nose",
+      "value": "mushroom"
+    },
+    {
+      "trait_type": "special",
+      "value": "black earring"
+    },
+    {
+      "trait_type": "lines",
+      "value": "black"
+    }
+  ]
+}

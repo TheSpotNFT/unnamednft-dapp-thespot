@@ -1,0 +1,40 @@
+{
+  "name": "UnnamedNFT #98",
+  "description": "No discord, no twitter, no roadmap, no utiltiy #unnamedNFT",
+  "image": "https://gateway.pinata.cloud/ipfs/Qmf67K5CNq95cxD4EwgN6XsuSGpDDgYHikvGWzBGAownLP/98.png",
+  "edition": 98,
+  "attributes": [
+    {
+      "trait_type": "background",
+      "value": "lime"
+    },
+    {
+      "trait_type": "eyes",
+      "value": "pervy"
+    },
+    {
+      "trait_type": "mouth",
+      "value": "smile"
+    },
+    {
+      "trait_type": "hat",
+      "value": "purple foam"
+    },
+    {
+      "trait_type": "skin",
+      "value": "purple"
+    },
+    {
+      "trait_type": "nose",
+      "value": "stud"
+    },
+    {
+      "trait_type": "special",
+      "value": "silver earring"
+    },
+    {
+      "trait_type": "lines",
+      "value": "black"
+    }
+  ]
+}

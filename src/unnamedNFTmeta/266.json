@@ -1,0 +1,40 @@
+{
+  "name": "UnnamedNFT #266",
+  "description": "No discord, no twitter, no roadmap, no utiltiy #unnamedNFT",
+  "image": "https://gateway.pinata.cloud/ipfs/Qmf67K5CNq95cxD4EwgN6XsuSGpDDgYHikvGWzBGAownLP/266.png",
+  "edition": 266,
+  "attributes": [
+    {
+      "trait_type": "background",
+      "value": "light blue"
+    },
+    {
+      "trait_type": "eyes",
+      "value": "rolling"
+    },
+    {
+      "trait_type": "mouth",
+      "value": "upset"
+    },
+    {
+      "trait_type": "hat",
+      "value": "pink 5 panel"
+    },
+    {
+      "trait_type": "skin",
+      "value": "orange"
+    },
+    {
+      "trait_type": "nose",
+      "value": "cyborg"
+    },
+    {
+      "trait_type": "special",
+      "value": "hat deetz"
+    },
+    {
+      "trait_type": "lines",
+      "value": "black"
+    }
+  ]
+}

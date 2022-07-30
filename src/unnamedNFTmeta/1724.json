@@ -1,0 +1,40 @@
+{
+  "name": "UnnamedNFT #1724",
+  "description": "No discord, no twitter, no roadmap, no utiltiy #unnamedNFT",
+  "image": "https://gateway.pinata.cloud/ipfs/Qmf67K5CNq95cxD4EwgN6XsuSGpDDgYHikvGWzBGAownLP/1724.png",
+  "edition": 1724,
+  "attributes": [
+    {
+      "trait_type": "background",
+      "value": "terracotta"
+    },
+    {
+      "trait_type": "eyes",
+      "value": "glossy"
+    },
+    {
+      "trait_type": "mouth",
+      "value": "tongue out"
+    },
+    {
+      "trait_type": "hat",
+      "value": "light purple"
+    },
+    {
+      "trait_type": "skin",
+      "value": "red"
+    },
+    {
+      "trait_type": "nose",
+      "value": "french fries"
+    },
+    {
+      "trait_type": "special",
+      "value": "gold earring"
+    },
+    {
+      "trait_type": "lines",
+      "value": "black"
+    }
+  ]
+}

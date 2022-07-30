@@ -1,0 +1,40 @@
+{
+  "name": "UnnamedNFT #1979",
+  "description": "No discord, no twitter, no roadmap, no utiltiy #unnamedNFT",
+  "image": "https://gateway.pinata.cloud/ipfs/Qmf67K5CNq95cxD4EwgN6XsuSGpDDgYHikvGWzBGAownLP/1979.png",
+  "edition": 1979,
+  "attributes": [
+    {
+      "trait_type": "background",
+      "value": "bright teal"
+    },
+    {
+      "trait_type": "eyes",
+      "value": "bulging"
+    },
+    {
+      "trait_type": "mouth",
+      "value": "hot lips"
+    },
+    {
+      "trait_type": "hat",
+      "value": "light purple"
+    },
+    {
+      "trait_type": "skin",
+      "value": "dark green"
+    },
+    {
+      "trait_type": "nose",
+      "value": "cyborg"
+    },
+    {
+      "trait_type": "special",
+      "value": "silver earring"
+    },
+    {
+      "trait_type": "lines",
+      "value": "black"
+    }
+  ]
+}

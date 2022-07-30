@@ -1,0 +1,40 @@
+{
+  "name": "UnnamedNFT #959",
+  "description": "No discord, no twitter, no roadmap, no utiltiy #unnamedNFT",
+  "image": "https://gateway.pinata.cloud/ipfs/Qmf67K5CNq95cxD4EwgN6XsuSGpDDgYHikvGWzBGAownLP/959.png",
+  "edition": 959,
+  "attributes": [
+    {
+      "trait_type": "background",
+      "value": "grapes"
+    },
+    {
+      "trait_type": "eyes",
+      "value": "cyborg"
+    },
+    {
+      "trait_type": "mouth",
+      "value": "tired"
+    },
+    {
+      "trait_type": "hat",
+      "value": "dark pink light blue"
+    },
+    {
+      "trait_type": "skin",
+      "value": "dark green"
+    },
+    {
+      "trait_type": "nose",
+      "value": "ape"
+    },
+    {
+      "trait_type": "special",
+      "value": "silver earring"
+    },
+    {
+      "trait_type": "lines",
+      "value": "black"
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "name": "UnnamedNFT #2833",
+  "description": "No discord, no twitter, no roadmap, no utiltiy #unnamedNFT",
+  "image": "https://gateway.pinata.cloud/ipfs/Qmf67K5CNq95cxD4EwgN6XsuSGpDDgYHikvGWzBGAownLP/2833.png",
+  "edition": 2833,
+  "attributes": [
+    {
+      "trait_type": "background",
+      "value": "sea"
+    },
+    {
+      "trait_type": "eyes",
+      "value": "pickles"
+    },
+    {
+      "trait_type": "mouth",
+      "value": "tired"
+    },
+    {
+      "trait_type": "hat",
+      "value": "tri colour blue"
+    },
+    {
+      "trait_type": "skin",
+      "value": "purple"
+    },
+    {
+      "trait_type": "nose",
+      "value": "ant eater"
+    },
+    {
+      "trait_type": "special",
+      "value": "hat deetz 2"
+    },
+    {
+      "trait_type": "lines",
+      "value": "black"
+    }
+  ]
+}

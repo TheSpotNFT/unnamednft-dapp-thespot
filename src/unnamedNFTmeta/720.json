@@ -1,0 +1,40 @@
+{
+  "name": "UnnamedNFT #720",
+  "description": "No discord, no twitter, no roadmap, no utiltiy #unnamedNFT",
+  "image": "https://gateway.pinata.cloud/ipfs/Qmf67K5CNq95cxD4EwgN6XsuSGpDDgYHikvGWzBGAownLP/720.png",
+  "edition": 720,
+  "attributes": [
+    {
+      "trait_type": "background",
+      "value": "grapes"
+    },
+    {
+      "trait_type": "eyes",
+      "value": "pickles"
+    },
+    {
+      "trait_type": "mouth",
+      "value": "huge smile"
+    },
+    {
+      "trait_type": "hat",
+      "value": "orange foam"
+    },
+    {
+      "trait_type": "skin",
+      "value": "dark foam"
+    },
+    {
+      "trait_type": "nose",
+      "value": "tiny"
+    },
+    {
+      "trait_type": "special",
+      "value": "nothing special"
+    },
+    {
+      "trait_type": "lines",
+      "value": "black"
+    }
+  ]
+}

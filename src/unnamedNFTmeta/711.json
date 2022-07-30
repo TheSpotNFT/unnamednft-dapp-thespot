@@ -1,0 +1,40 @@
+{
+  "name": "UnnamedNFT #711",
+  "description": "No discord, no twitter, no roadmap, no utiltiy #unnamedNFT",
+  "image": "https://gateway.pinata.cloud/ipfs/Qmf67K5CNq95cxD4EwgN6XsuSGpDDgYHikvGWzBGAownLP/711.png",
+  "edition": 711,
+  "attributes": [
+    {
+      "trait_type": "background",
+      "value": "grapes"
+    },
+    {
+      "trait_type": "eyes",
+      "value": "bleeding"
+    },
+    {
+      "trait_type": "mouth",
+      "value": "big lips"
+    },
+    {
+      "trait_type": "hat",
+      "value": "orange foam"
+    },
+    {
+      "trait_type": "skin",
+      "value": "orange"
+    },
+    {
+      "trait_type": "nose",
+      "value": "small"
+    },
+    {
+      "trait_type": "special",
+      "value": "hat deetz 2"
+    },
+    {
+      "trait_type": "lines",
+      "value": "black"
+    }
+  ]
+}

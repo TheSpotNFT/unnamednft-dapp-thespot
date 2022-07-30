@@ -1,0 +1,40 @@
+{
+  "name": "UnnamedNFT #2013",
+  "description": "No discord, no twitter, no roadmap, no utiltiy #unnamedNFT",
+  "image": "https://gateway.pinata.cloud/ipfs/Qmf67K5CNq95cxD4EwgN6XsuSGpDDgYHikvGWzBGAownLP/2013.png",
+  "edition": 2013,
+  "attributes": [
+    {
+      "trait_type": "background",
+      "value": "terracotta"
+    },
+    {
+      "trait_type": "eyes",
+      "value": "angry"
+    },
+    {
+      "trait_type": "mouth",
+      "value": "drooling"
+    },
+    {
+      "trait_type": "hat",
+      "value": "blue"
+    },
+    {
+      "trait_type": "skin",
+      "value": "purple"
+    },
+    {
+      "trait_type": "nose",
+      "value": "massive"
+    },
+    {
+      "trait_type": "special",
+      "value": "urination"
+    },
+    {
+      "trait_type": "lines",
+      "value": "black"
+    }
+  ]
+}

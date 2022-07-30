@@ -1,0 +1,40 @@
+{
+  "name": "UnnamedNFT #1079",
+  "description": "No discord, no twitter, no roadmap, no utiltiy #unnamedNFT",
+  "image": "https://gateway.pinata.cloud/ipfs/Qmf67K5CNq95cxD4EwgN6XsuSGpDDgYHikvGWzBGAownLP/1079.png",
+  "edition": 1079,
+  "attributes": [
+    {
+      "trait_type": "background",
+      "value": "grapes"
+    },
+    {
+      "trait_type": "eyes",
+      "value": "happy"
+    },
+    {
+      "trait_type": "mouth",
+      "value": "straight"
+    },
+    {
+      "trait_type": "hat",
+      "value": "green 5 panel"
+    },
+    {
+      "trait_type": "skin",
+      "value": "dark blue"
+    },
+    {
+      "trait_type": "nose",
+      "value": "stud"
+    },
+    {
+      "trait_type": "special",
+      "value": "hat deetz 2"
+    },
+    {
+      "trait_type": "lines",
+      "value": "black"
+    }
+  ]
+}

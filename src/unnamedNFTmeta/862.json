@@ -1,0 +1,40 @@
+{
+  "name": "UnnamedNFT #862",
+  "description": "No discord, no twitter, no roadmap, no utiltiy #unnamedNFT",
+  "image": "https://gateway.pinata.cloud/ipfs/Qmf67K5CNq95cxD4EwgN6XsuSGpDDgYHikvGWzBGAownLP/862.png",
+  "edition": 862,
+  "attributes": [
+    {
+      "trait_type": "background",
+      "value": "dark grey"
+    },
+    {
+      "trait_type": "eyes",
+      "value": "excited"
+    },
+    {
+      "trait_type": "mouth",
+      "value": "ghost pepper burnt"
+    },
+    {
+      "trait_type": "hat",
+      "value": "neon green"
+    },
+    {
+      "trait_type": "skin",
+      "value": "light blue"
+    },
+    {
+      "trait_type": "nose",
+      "value": "zombie"
+    },
+    {
+      "trait_type": "special",
+      "value": "nothing special"
+    },
+    {
+      "trait_type": "lines",
+      "value": "black"
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "name": "UnnamedNFT #1556",
+  "description": "No discord, no twitter, no roadmap, no utiltiy #unnamedNFT",
+  "image": "https://gateway.pinata.cloud/ipfs/Qmf67K5CNq95cxD4EwgN6XsuSGpDDgYHikvGWzBGAownLP/1556.png",
+  "edition": 1556,
+  "attributes": [
+    {
+      "trait_type": "background",
+      "value": "bright green"
+    },
+    {
+      "trait_type": "eyes",
+      "value": "angry"
+    },
+    {
+      "trait_type": "mouth",
+      "value": "sun burnt"
+    },
+    {
+      "trait_type": "hat",
+      "value": "purple"
+    },
+    {
+      "trait_type": "skin",
+      "value": "orange"
+    },
+    {
+      "trait_type": "nose",
+      "value": "big"
+    },
+    {
+      "trait_type": "special",
+      "value": "nothing special"
+    },
+    {
+      "trait_type": "lines",
+      "value": "black"
+    }
+  ]
+}

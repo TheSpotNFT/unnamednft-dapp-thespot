@@ -1,0 +1,40 @@
+{
+  "name": "UnnamedNFT #478",
+  "description": "No discord, no twitter, no roadmap, no utiltiy #unnamedNFT",
+  "image": "https://gateway.pinata.cloud/ipfs/Qmf67K5CNq95cxD4EwgN6XsuSGpDDgYHikvGWzBGAownLP/478.png",
+  "edition": 478,
+  "attributes": [
+    {
+      "trait_type": "background",
+      "value": "terracotta"
+    },
+    {
+      "trait_type": "eyes",
+      "value": "shroomin"
+    },
+    {
+      "trait_type": "mouth",
+      "value": "huge smile"
+    },
+    {
+      "trait_type": "hat",
+      "value": "yellow pink"
+    },
+    {
+      "trait_type": "skin",
+      "value": "ice blue"
+    },
+    {
+      "trait_type": "nose",
+      "value": "ring"
+    },
+    {
+      "trait_type": "special",
+      "value": "hat deetz 3"
+    },
+    {
+      "trait_type": "lines",
+      "value": "black"
+    }
+  ]
+}

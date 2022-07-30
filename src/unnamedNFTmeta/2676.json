@@ -1,0 +1,40 @@
+{
+  "name": "UnnamedNFT #2676",
+  "description": "No discord, no twitter, no roadmap, no utiltiy #unnamedNFT",
+  "image": "https://gateway.pinata.cloud/ipfs/Qmf67K5CNq95cxD4EwgN6XsuSGpDDgYHikvGWzBGAownLP/2676.png",
+  "edition": 2676,
+  "attributes": [
+    {
+      "trait_type": "background",
+      "value": "dark grey"
+    },
+    {
+      "trait_type": "eyes",
+      "value": "cyborg"
+    },
+    {
+      "trait_type": "mouth",
+      "value": "stoned"
+    },
+    {
+      "trait_type": "hat",
+      "value": "orange foam"
+    },
+    {
+      "trait_type": "skin",
+      "value": "seafoam"
+    },
+    {
+      "trait_type": "nose",
+      "value": "ant eater"
+    },
+    {
+      "trait_type": "special",
+      "value": "black earring"
+    },
+    {
+      "trait_type": "lines",
+      "value": "black"
+    }
+  ]
+}
