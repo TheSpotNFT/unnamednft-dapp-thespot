@@ -26,7 +26,8 @@ export const Board = () => {
     });
     {/* For Traits retrieval */ }
     const [chosenTrait, setChosenTrait] = useState({
-        BackGround: '',
+        UnnamedNFT: '',
+        UnnamedNFTID: '',
         Eyes: '',
         Mouth: '',
         Hat: '',
@@ -220,38 +221,10 @@ export const Board = () => {
                     <div className='grow border-dashed border-4 border-slate-500 p-3 m-1 text-left col-span-1 w-96 md:mt-10 lg:mt-1 mt-10 sm:mt-10 text-sm'>
                         {/* Individual Stats */}
                         <div className='font-mono text-white list-none flex pb-3'>
-                            <div className={`text-${(walletTraits.includes(`${chosenTrait.Background}`)) || (branding.some(ai => chosenTrait.Background === ai)) ? "spot-yellow" : "spot-yellow"} font-bold pr-3`}>BackGround: </div>
-                            {chosenTrait.BackGround}
+                            <div className={`text-${(walletTraits.includes(`${chosenTrait.UnnamedNFTID}`)) ? "spot-yellow" : "[red]"} font-bold pr-3`}>UnnamedNFT: </div>
+                            {chosenTrait.UnnamedNFTID}
                         </div>
 
-                        <div className='font-mono text-white list-none flex pb-3'>
-                            <div className={`text-${(walletTraits.includes(`${chosenTrait.Eyes}`)) || (branding.some(ai => chosenTrait.Eyes === ai)) ? "spot-yellow" : "spot-yellow"} font-bold pr-3`}>Eyes: </div>
-                            {chosenTrait.Eyes}
-                        </div>
-                        <div className='font-mono text-white list-none flex pb-3'>
-                            <div className={`text-${(walletTraits.includes(`${chosenTrait.Mouth}`)) || (branding.some(ai => chosenTrait.Mouth === ai)) ? "spot-yellow" : "spot-yellow"} font-bold pr-3`}>Mouth: </div>
-                            {chosenTrait.Mouth}
-                        </div>
-                        <div className='font-mono text-white list-none flex pb-3'>
-                            <div className={`text-${(walletTraits.includes(`${chosenTrait.Hat}`)) || (branding.some(ai => chosenTrait.Hat === ai)) ? "spot-yellow" : "spot-yellow"} font-bold pr-3`}>Hat: </div>
-                            {chosenTrait.Hat}
-                        </div>
-                        <div className='font-mono text-white list-none flex pb-3'>
-                            <div className={`text-${(walletTraits.includes(`${chosenTrait.Skin}`)) || (branding.some(ai => chosenTrait.Skin === ai)) ? "spot-yellow" : "spot-yellow"} font-bold pr-3`}>Skin: </div>
-                            {chosenTrait.Skin}
-                        </div>
-                        <div className='font-mono text-white list-none flex pb-3'>
-                            <div className={`text-${(walletTraits.includes(`${chosenTrait.Nose}`)) || (branding.some(ai => chosenTrait.Nose === ai)) ? "spot-yellow" : "spot-yellow"} font-bold pr-3`}>Nose: </div>
-                            {chosenTrait.Nose}
-                        </div>
-                        <div className='font-mono text-white list-none flex pb-3'>
-                            <div className={`text-${(walletTraits.includes(`${chosenTrait.Special}`)) || (branding.some(ai => chosenTrait.Special === ai)) ? "spot-yellow" : "spot-yellow"} font-bold pr-3`}>Special: </div>
-                            {chosenTrait.Special}
-                        </div>
-                        <div className='font-mono text-white list-none flex pb-3'>
-                            <div className={`text-${(walletTraits.includes(`${chosenTrait.Lines}`)) || (branding.some(ai => chosenTrait.Lines === ai)) ? "spot-yellow" : "spot-yellow"} font-bold pr-3`}>Lines: </div>
-                            {metadata.Lines}
-                        </div>
 
                         <div className='font-mono text-white list-none flex pb-3'>
                             <div className={`text-${walletTraits.includes(`${chosenTrait.BrandingID}`) || (branding.some(ai => chosenTrait.BrandingID === ai)) ? "spot-yellow" : "[red]"} font-bold pr-3`}>Branding: </div>
