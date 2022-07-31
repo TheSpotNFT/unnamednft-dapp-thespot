@@ -219,6 +219,8 @@ import image8 from './unnamedImages/8.png'
 import image9 from './unnamedImages/9.png'
 import image3001 from './unnamedImages/3001.png'
 import image3002 from './unnamedImages/3002.png'
+import image3003 from './unnamedImages/3003.png'
+import image3004 from './unnamedImages/3004.png'
 import image56 from './unnamedImages/56.png'
 
 
@@ -1778,6 +1780,24 @@ const traits = [
     traitName: 'The Spot',
     rarity: 'Legendary'
   },
+  {
+    id: 3003,
+    image: image3003,
+    nftName: 'Campfire',
+    traitType: 'Branding',
+    traitName: 'Campfire',
+    rarity: 'Legendary'
+  },
+  {
+    id: 3004,
+    image: image3004,
+    nftName: 'Campfire Small',
+    traitType: 'Branding',
+    traitName: 'Campfire',
+    rarity: 'Legendary'
+  },
+
+
 
 
 ]
