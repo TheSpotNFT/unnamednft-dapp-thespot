@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef, useCallback } from 'react';
 import Card from '../Card';
 import traits from '../../traits';
-import metadata from '../../metadata.json'
+import unnamedData from '../../metadata.jsx'
 import { useMoralis, useWeb3ExecuteFunction } from "react-moralis";
 import Moralis from 'moralis';
 import Authenticate from '../Authenticate';
@@ -17,6 +17,7 @@ export const Board = () => {
     const spotNFTContract = '0x9455aa2aF62B529E49fBFE9D10d67990C0140AFC';
 
     const [filter, setFilter] = useState('');
+   
 
 
     {/* For Image retrieval */ }
@@ -27,7 +28,7 @@ export const Board = () => {
     {/* For Traits retrieval */ }
     const [chosenTrait, setChosenTrait] = useState({
         UnnamedNFT: '',
-        UnnamedNFTID: '',
+        UnnamedNFTID: '1',
         Eyes: '',
         Mouth: '',
         Hat: '',
@@ -39,6 +40,7 @@ export const Board = () => {
         BrandingID: '9999'
     })
 
+ 
     //Set an array of save UnnamedNFT traits which are unburnable and available to all.
     const start = 3001;
     const end = 3002;
@@ -48,7 +50,7 @@ export const Board = () => {
     const [walletTraits, setWalletTraits] = useState([])
     const [apiLoaded, setApiLoaded] = useState(false)
     const [checkMyTraits, setCheckMyTraits] = useState(false)
-
+    const unnamedNFTdata = unnamedData;
 
     function getTraits() {
         const options = { chain: "0xa86a", address: userAddress, token_address: spotTraitsContract };
@@ -185,9 +187,21 @@ export const Board = () => {
         }
     }, [chosenTrait])
 
+
+/*    const newArray = unnamedData.filter(function (editions){
+        return editions.edition === 1;
+    
+    });
+    console.log(newArray);
+    */
+
+
     // Add feature: Filter owned trait cards
-    const [ownedCards, setOwnedCards] = useState(false)
+    const [ownedCards, setOwnedCards] = useState(true)
     //---------------------------------//
+
+//filtering
+
 
     if (!isAuthenticated) {
         return (
@@ -287,7 +301,31 @@ export const Board = () => {
                 <div className='overflow-y-auto'>
                     <div className="p-10 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-4 xl:grid-cols-6 gap-5 font-mono text-spot-yellow">
                         {ownedCards ? ownedFilter.map(createCard) : dataSearch.map(createCard)}
-                    </div></div>
+                    </div></div> 
+                    <div className="text-white">BackGround: {unnamedData[`${(chosenTrait.UnnamedNFTID -1)}`].attributes[0].value}</div>
+                    <div className="text-white">Eyes: {unnamedData[`${(chosenTrait.UnnamedNFTID -1)}`].attributes[1].value}</div>
+                    <div className="text-white">Mouth: {unnamedData[`${(chosenTrait.UnnamedNFTID -1)}`].attributes[2].value}</div>
+                    <div className="text-white">Hat: {unnamedData[`${(chosenTrait.UnnamedNFTID -1)}`].attributes[3].value}</div>
+                    <div className="text-white">Skin: {unnamedData[`${(chosenTrait.UnnamedNFTID -1)}`].attributes[4].value}</div>
+                    <div className="text-white">Nose: {unnamedData[`${(chosenTrait.UnnamedNFTID -1)}`].attributes[5].value}</div>
+                    <div className="text-white">Special: {unnamedData[`${(chosenTrait.UnnamedNFTID -1)}`].attributes[6].value}</div>
+                    <div className="text-white">Lines: {unnamedData[`${(chosenTrait.UnnamedNFTID -1)}`].attributes[7].value}</div>
+
+
             </div>
+              
         )
+
 }
+/*
+
+
+let ownedFilter = traits.filter(item => {
+
+        if (walletTraits.includes(item.id.toString()) || branding.includes(item.id)) {
+
+            return item
+        }
+
+    })
+    */

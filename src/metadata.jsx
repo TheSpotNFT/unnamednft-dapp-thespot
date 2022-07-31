@@ -1,4 +1,4 @@
-[
+const unnamedData = [
   {
     "name": "UnnamedNFT #1",
     "description": "No discord, no twitter, no roadmap, no utiltiy #unnamedNFT",
@@ -120000,3 +120000,4 @@
     ]
   }
 ]
+export default unnamedData;

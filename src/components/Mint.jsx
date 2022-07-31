@@ -3,6 +3,7 @@ import React, { useEffect, useState } from 'react'
 import { useWeb3ExecuteFunction, useMoralisCloudFunction } from "react-moralis";
 import spotNFTAbi from '../contracts/spotNFTAbi.json';
 import Moralis from 'moralis';
+import unnamedData from '../metadata';
 
 
 
@@ -10,6 +11,15 @@ function Mint(props) {
   const [isLoading, setIsLoading] = useState(false)
   const spotTraitsContract = "0x9521807adf320d1cdf87afdf875bf438d1d92d87";
   const spotNFTContract = '0x9455aa2aF62B529E49fBFE9D10d67990C0140AFC';
+  const background = unnamedData[`${(props.chosenTrait.UnnamedNFTID -1)}`].attributes[0].value;
+  const eyes = unnamedData[`${(props.chosenTrait.UnnamedNFTID -1)}`].attributes[1].value;
+  const mouth = unnamedData[`${(props.chosenTrait.UnnamedNFTID -1)}`].attributes[2].value;
+  const hat = unnamedData[`${(props.chosenTrait.UnnamedNFTID -1)}`].attributes[3].value;
+  const skin = unnamedData[`${(props.chosenTrait.UnnamedNFTID -1)}`].attributes[4].value;
+  const nose = unnamedData[`${(props.chosenTrait.UnnamedNFTID -1)}`].attributes[5].value;
+  const special = unnamedData[`${(props.chosenTrait.UnnamedNFTID -1)}`].attributes[6].value;
+  const lines = unnamedData[`${(props.chosenTrait.UnnamedNFTID -1)}`].attributes[7].value;
+
 
   let userAddress = props.userAddress
 
@@ -46,35 +56,35 @@ function Mint(props) {
         "attributes": [
           {
             "trait_type": "Background",
-            "value": props.unnamedNFT.Background
+            "value": background
           },
           {
             "trait_type": "Eyes",
-            "value": props.unnamedNFT.Body
+            "value": eyes
           },
           {
             "trait_type": "Mouth",
-            "value": props.unnamedNFT.Head
+            "value": mouth
           },
           {
             "trait_type": "Hat",
-            "value": props.unnamedNFT.Eyes
+            "value": hat
           },
           {
             "trait_type": "Skin",
-            "value": props.unnamedNFT.Mouth
+            "value": skin
           },
           {
             "trait_type": "Nose",
-            "value": props.unnamedNFT.Mouth
+            "value": nose
           },
           {
             "trait_type": "Special",
-            "value": props.unnamedNFT.Mouth
+            "value": special
           },
           {
             "trait_type": "Lines",
-            "value": props.unnamedNFT.Mouth
+            "value": lines
           },
           {
             "trait_type": "Branding",
