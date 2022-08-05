@@ -11,14 +11,8 @@ function Mint(props) {
   const [isLoading, setIsLoading] = useState(false)
   const spotTraitsContract = "0x9521807adf320d1cdf87afdf875bf438d1d92d87";
   const spotNFTContract = '0x9455aa2aF62B529E49fBFE9D10d67990C0140AFC';
-  const background = unnamedData[`${(props.chosenTrait.UnnamedNFTID -1)}`].attributes[0].value;
-  const eyes = unnamedData[`${(props.chosenTrait.UnnamedNFTID -1)}`].attributes[1].value;
-  const mouth = unnamedData[`${(props.chosenTrait.UnnamedNFTID -1)}`].attributes[2].value;
-  const hat = unnamedData[`${(props.chosenTrait.UnnamedNFTID -1)}`].attributes[3].value;
-  const skin = unnamedData[`${(props.chosenTrait.UnnamedNFTID -1)}`].attributes[4].value;
-  const nose = unnamedData[`${(props.chosenTrait.UnnamedNFTID -1)}`].attributes[5].value;
-  const special = unnamedData[`${(props.chosenTrait.UnnamedNFTID -1)}`].attributes[6].value;
-  const lines = unnamedData[`${(props.chosenTrait.UnnamedNFTID -1)}`].attributes[7].value;
+  const background = props.chosenTrait.background;
+  const lines = props.chosenTrait.text;
 
 
   let userAddress = props.userAddress
@@ -50,45 +44,17 @@ function Mint(props) {
       const imgURL = await imageData.ipfs();
 
       const metadata = {
-        "name": "UnnamedNFT Branded",
-        "description": "Your Branded UnnamedNFT",
+        "name": "Tombstones",
+        "description": "Your TombStone",
         "image": imgURL,
         "attributes": [
           {
-            "trait_type": "Background",
+            "trait_type": "Tombstone",
             "value": background
           },
           {
-            "trait_type": "Eyes",
-            "value": eyes
-          },
-          {
-            "trait_type": "Mouth",
-            "value": mouth
-          },
-          {
-            "trait_type": "Hat",
-            "value": hat
-          },
-          {
-            "trait_type": "Skin",
-            "value": skin
-          },
-          {
-            "trait_type": "Nose",
-            "value": nose
-          },
-          {
-            "trait_type": "Special",
-            "value": special
-          },
-          {
-            "trait_type": "Lines",
-            "value": lines
-          },
-          {
-            "trait_type": "Branding",
-            "value": props.chosenTrait.Branding
+            "trait_type": "Name",
+            "value": "name"
           }
         ],
       }
