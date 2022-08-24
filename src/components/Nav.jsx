@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import logo from '../assets/logo.png'
+import logo from '../assets/unnamedimg.png'
 import LogoutButton from './Logout'
 import { GiHamburgerMenu } from "react-icons/gi"
 
