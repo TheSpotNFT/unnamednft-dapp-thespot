@@ -1,5 +1,4 @@
 import React, { useState, useEffect, useRef, useCallback } from 'react';
-import Select from 'react-select';
 import Card from '../Card';
 import traits from '../../traits';
 import unnamedData from '../../metadata.jsx'
@@ -18,105 +17,6 @@ export const Board = () => {
     const spotNFTContract = '0x9455aa2aF62B529E49fBFE9D10d67990C0140AFC';
 
     const [filter, setFilter] = useState('');
-    const [textinput, setTextinput] = useState('');
-    const [xInput, setXInput] = useState('125');
-    const [yInput, setYInput] = useState('135');
-    const [fontSize, setFontSize] = useState('30');
-    const [font, setFont] = useState('Arial');
-    const [fontStyle, setFontStyle] = useState('normal');
-
-    const textinputUser = (event) => {
-        setTextinput(event.target.value);
-    }
-    const userXInput = (event) => {
-        setXInput(event.target.value);
-    }
-    const userYInput = (event) => {
-        setYInput(event.target.value);
-    }
-    const userFontSize = (event) => {
-        setFontSize(event.target.value);
-    }
-
-    const textFontOptions = [
-        { value: "Arial", label: "Arial" },
-        { value: "Comic Sans MS", label: "Comic Sans MS" },
-        { value: "Courier New", label: "Courier New" },
-        { value: "Times New Roman", label: "Times New Roman" },
-        { value: "Fantasy", label: "Fantasy" },
-        { value: "Sans-serif", label: "Sans-serif" },
-        { value: "Serif", label: "Serif" },
-        { value: "Cambria", label: "Cambria" },
-
-    ];
-
-    const textFontStyleOptions = [
-        { value: "normal", label: "Normal" },
-        { value: "bold", label: "Bold" },
-
-
-    ];
-
-    const handleChange = selectedOption => {
-        console.log('handleChange', selectedOption.value);
-        setFont(selectedOption.value);
-    };
-
-    const handleChangeStyle = selectedOption => {
-        console.log('handleChange', selectedOption.value);
-        setFontStyle(selectedOption.value);
-    };
-
-
-    const [textinputText, setTextinputText] = useState('');
-    const [xInputText, setXInputText] = useState('110');
-    const [yInputText, setYInputText] = useState('160');
-    const [fontSizeText, setFontSizeText] = useState('20');
-    const [fontText, setFontText] = useState('Arial');
-    const [fontStyleText, setFontStyleText] = useState('normal');
-
-
-    const textinputUserText = (event) => {
-        setTextinputText(event.target.value);
-    }
-    const userXInputText = (event) => {
-        setXInputText(event.target.value);
-    }
-    const userYInputText = (event) => {
-        setYInputText(event.target.value);
-    }
-    const userFontSizeText = (event) => {
-        setFontSizeText(event.target.value);
-    }
-
-    const textFontOptionsText = [
-        { value: "Arial", label: "Arial" },
-        { value: "Comic Sans MS", label: "Comic Sans MS" },
-        { value: "Courier New", label: "Courier New" },
-        { value: "Times New Roman", label: "Times New Roman" },
-        { value: "Fantasy", label: "Fantasy" },
-        { value: "Sans-serif", label: "Sans-serif" },
-        { value: "Serif", label: "Serif" },
-        { value: "Cambria", label: "Cambria" },
-
-    ];
-
-    const textFontStyleOptionsText = [
-        { value: "normal", label: "Normal" },
-        { value: "bold", label: "Bold" },
-
-
-    ];
-
-    const handleChangeText = selectedOption => {
-        console.log('handleChange', selectedOption.value);
-        setFontText(selectedOption.value);
-    };
-
-    const handleChangeStyleText = selectedOption => {
-        console.log('handleChange', selectedOption.value);
-        setFontStyleText(selectedOption.value);
-    };
 
     {/* For Image retrieval */ }
     const [canvasImage, setCanvasImage] = useState({
@@ -187,11 +87,11 @@ export const Board = () => {
         )
     }
 
-    // For Searching traits
+    /* For Searching traits
     const searchText = (event) => {
         setFilter(event.target.value);
     }
-
+*/
 
     let dataSearch = traits.filter(item => {
         return Object.keys(item).some(key => item[key].toString().toLowerCase().includes(filter.toString().toLowerCase())
@@ -306,7 +206,7 @@ export const Board = () => {
                     {/* Stats div*/}
                     <div className='grow border-dashed border-4 border-slate-500 p-3 pl-5 m-1 text-left col-span-1 w-80 md:mt-10 lg:mt-2 mt-10 sm:mt-10 text-sm' style={{ height: "23rem" }}>
                         {/* Individual Stats */}
-                        <div className='font-mono text-white list-none flex pb-3'>
+                        <div className='font-mono text-white list-none flex'>
                             <div className={`text-${(walletTraits.includes(`${chosenTrait.UnnamedNFTID}`)) ? "spot-yellow" : "[red]"} font-bold pr-3`}>UnnamedNFT: </div>
                             {chosenTrait.UnnamedNFTID}
                         </div>
@@ -319,6 +219,7 @@ export const Board = () => {
                         <div className="text-spot-yellow flex">Nose: <div className='text-white flex px-2'>{unnamedData[`${(chosenTrait.UnnamedNFTID - 1)}`].attributes[5].value}</div></div>
                         <div className="text-spot-yellow flex">Special: <div className='text-white flex px-2'>{unnamedData[`${(chosenTrait.UnnamedNFTID - 1)}`].attributes[6].value}</div></div>
                         <div className="text-spot-yellow flex">Lines: <div className='text-white flex px-2'>{unnamedData[`${(chosenTrait.UnnamedNFTID - 1)}`].attributes[7].value}</div></div>
+                        <div className="text-spot-yellow flex">Brand: <div className='text-white flex px-2'>{chosenTrait.BrandingID}</div></div>
                         {/* End of Indiv Stats */}
                         {/* Buttons */}
                         <div className="pt-1 pb-1 flex">

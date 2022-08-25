@@ -61,70 +61,70 @@ const traits = [
   {
     id: 3001,
     image: image3001,
-    nftName: 'Branding',
+    nftName: 'The Spot',
     traitType: 'Branding',
     rarity: 'Common'
   },
   {
     id: 3002,
     image: image3002,
-    nftName: 'Branding',
+    nftName: 'The Spot',
     traitType: 'Branding',
     rarity: 'Common'
   },
   {
     id: 3003,
     image: image3003,
-    nftName: 'Branding',
+    nftName: 'Campfire',
     traitType: 'Branding',
     rarity: 'Common'
   },
   {
     id: 3004,
     image: image3004,
-    nftName: 'Branding',
+    nftName: 'Campfire',
     traitType: 'Branding',
     rarity: 'Common'
   },
   {
     id: 3005,
     image: image3005,
-    nftName: 'Branding',
+    nftName: 'Cuddlefish',
     traitType: 'Branding',
     rarity: 'Common'
   },
   {
     id: 3006,
     image: image3006,
-    nftName: 'Branding',
+    nftName: 'Cuddlefish',
     traitType: 'Branding',
     rarity: 'Common'
   },
   {
     id: 3007,
     image: image3007,
-    nftName: 'Branding',
+    nftName: 'Monkeez',
     traitType: 'Branding',
     rarity: 'Common'
   },
   {
     id: 3008,
     image: image3008,
-    nftName: 'Branding',
+    nftName: 'Monkeez',
     traitType: 'Branding',
     rarity: 'Common'
   },
   {
     id: 3009,
     image: image3009,
-    nftName: 'Branding',
+    nftName: 'Monkeez',
     traitType: 'Branding',
     rarity: 'Common'
   },
   {
     id: 3010,
     image: image3010,
-    nftName: 'Branding',
+    nftName: 'Monkeez',
     traitType: 'Branding',
     rarity: 'Common'
   },

@@ -7,6 +7,7 @@ import unnamedData from '../metadata';
 
 
 
+
 function Mint(props) {
   const [isLoading, setIsLoading] = useState(false)
   const spotTraitsContract = "0x9521807adf320d1cdf87afdf875bf438d1d92d87";
@@ -14,6 +15,19 @@ function Mint(props) {
   const background = props.chosenTrait.background;
   const lines = props.chosenTrait.text;
 
+  const [chosenTrait, setChosenTrait] = useState({
+    UnnamedNFT: '',
+    UnnamedNFTID: '',
+    Eyes: '',
+    Mouth: '',
+    Hat: '',
+    Skin: '',
+    Nose: '',
+    Special: '',
+    Lines: '',
+    Branding: '',
+    BrandingID: ''
+  })
 
   let userAddress = props.userAddress
 
@@ -43,19 +57,45 @@ function Mint(props) {
       await imageData.saveIPFS();
       const imgURL = await imageData.ipfs();
 
+
       const metadata = {
-        "name": "Tombstones",
-        "description": "Your TombStone",
+        "name": "Branded",
+        "description": "Branded UnnamedNFT",
         "image": imgURL,
         "attributes": [
           {
-            "trait_type": "Tombstone",
-            "value": background
+            "trait_type": "Eyes:",
+            "value": unnamedData[`${(chosenTrait.UnnamedNFTID - 1)}`].attributes[1].value
           },
           {
-            "trait_type": "Name",
-            "value": "name"
-          }
+            "trait_type": "Mouth",
+            "value": unnamedData[`${(chosenTrait.UnnamedNFTID - 1)}`].attributes[2].value
+          },
+          {
+            "trait_type": "Hat",
+            "value": unnamedData[`${(chosenTrait.UnnamedNFTID - 1)}`].attributes[3].value
+          },
+          {
+            "trait_type": "Skin",
+            "value": unnamedData[`${(chosenTrait.UnnamedNFTID - 1)}`].attributes[4].value
+          },
+          {
+            "trait_type": "Nose",
+            "value": unnamedData[`${(chosenTrait.UnnamedNFTID - 1)}`].attributes[5].value
+          },
+          {
+            "trait_type": "Special",
+            "value": unnamedData[`${(chosenTrait.UnnamedNFTID - 1)}`].attributes[6].value
+          },
+          {
+            "trait_type": "Lines",
+            "value": unnamedData[`${(chosenTrait.UnnamedNFTID - 1)}`].attributes[7].value
+          },
+          {
+            "trait_type": "Brand",
+            "value": props.chosenTrait.BrandingID
+          },
+
         ],
       }
       const tokenMetadataUrlResult = await Moralis.Cloud.run("handlemint", {
