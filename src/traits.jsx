@@ -3,11 +3,17 @@ import image2 from './unnamedImages/2.png'
 import image3 from './unnamedImages/3.png'
 import image4 from './unnamedImages/4.png'
 import image5 from './unnamedImages/5.png'
-import image6 from './unnamedImages/6.png'
+import image6 from './unnamedImages/19.png'
 import image3001 from './unnamedImages/3001.png'
 import image3002 from './unnamedImages/3002.png'
 import image3003 from './unnamedImages/3003.png'
 import image3004 from './unnamedImages/3004.png'
+import image3005 from './unnamedImages/3005.png'
+import image3006 from './unnamedImages/3006.png'
+import image3007 from './unnamedImages/3007.png'
+import image3008 from './unnamedImages/3008.png'
+import image3009 from './unnamedImages/3009.png'
+import image3010 from './unnamedImages/3010.png'
 
 
 const traits = [
@@ -76,6 +82,48 @@ const traits = [
   {
     id: 3004,
     image: image3004,
+    nftName: 'Branding',
+    traitType: 'Branding',
+    rarity: 'Common'
+  },
+  {
+    id: 3005,
+    image: image3005,
+    nftName: 'Branding',
+    traitType: 'Branding',
+    rarity: 'Common'
+  },
+  {
+    id: 3006,
+    image: image3006,
+    nftName: 'Branding',
+    traitType: 'Branding',
+    rarity: 'Common'
+  },
+  {
+    id: 3007,
+    image: image3007,
+    nftName: 'Branding',
+    traitType: 'Branding',
+    rarity: 'Common'
+  },
+  {
+    id: 3008,
+    image: image3008,
+    nftName: 'Branding',
+    traitType: 'Branding',
+    rarity: 'Common'
+  },
+  {
+    id: 3009,
+    image: image3009,
+    nftName: 'Branding',
+    traitType: 'Branding',
+    rarity: 'Common'
+  },
+  {
+    id: 3010,
+    image: image3010,
     nftName: 'Branding',
     traitType: 'Branding',
     rarity: 'Common'
