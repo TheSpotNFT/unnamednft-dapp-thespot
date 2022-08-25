@@ -14,7 +14,7 @@ function Mint(props) {
   const spotNFTContract = '0x9455aa2aF62B529E49fBFE9D10d67990C0140AFC';
   const background = props.chosenTrait.background;
   const lines = props.chosenTrait.text;
-
+  const unnamedNFTdata = unnamedData;
   const [chosenTrait, setChosenTrait] = useState({
     UnnamedNFT: '',
     UnnamedNFTID: '',

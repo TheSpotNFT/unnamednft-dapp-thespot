@@ -50,7 +50,7 @@ export const Board = () => {
     const [checkMyTraits, setCheckMyTraits] = useState(false)
     const unnamedNFTdata = unnamedData;
 
-    function getTraits() {
+    function getNFTs() {
         const options = { chain: "0xa86a", address: userAddress, token_address: spotTraitsContract };
         Moralis.Web3API.account.getNFTsForContract(options).then((data) => {
             const result = data.result
@@ -63,7 +63,7 @@ export const Board = () => {
 
 
     useEffect(() => {
-        getTraits();
+        getNFTs();
     }, [account])
 
 
@@ -219,7 +219,7 @@ export const Board = () => {
                         <div className="text-spot-yellow flex">Nose: <div className='text-white flex px-2'>{unnamedData[`${(chosenTrait.UnnamedNFTID - 1)}`].attributes[5].value}</div></div>
                         <div className="text-spot-yellow flex">Special: <div className='text-white flex px-2'>{unnamedData[`${(chosenTrait.UnnamedNFTID - 1)}`].attributes[6].value}</div></div>
                         <div className="text-spot-yellow flex">Lines: <div className='text-white flex px-2'>{unnamedData[`${(chosenTrait.UnnamedNFTID - 1)}`].attributes[7].value}</div></div>
-                        <div className="text-spot-yellow flex">Brand: <div className='text-white flex px-2'>{chosenTrait.BrandingID}</div></div>
+                        <div className="text-spot-yellow flex">Brand: <div className='text-white flex px-2'>{chosenTrait.Branding}</div></div>
                         {/* End of Indiv Stats */}
                         {/* Buttons */}
                         <div className="pt-1 pb-1 flex">
@@ -231,7 +231,7 @@ export const Board = () => {
                                 userAddress={userAddress}
                                 canvas={chosenTrait}
                                 savedImage={savedImage}
-                                branding={branding}
+                            // branding={branding}
                             // traitsAvailability={traitsAvailability}
                             />
 
