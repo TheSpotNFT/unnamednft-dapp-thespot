@@ -93,7 +93,7 @@ function Mint(props) {
   }
   if (isLoading) {
     return (
-      <div><button className="inline-flex m-2 rounded-lg px-4 py-2 border-2 border-spot-yellow text-spot-yellow
+      <div><button className="inline-flex m-1 rounded-lg px-4 py-2 border-2 border-spot-yellow text-spot-yellow
      duration-300 font-mono font-bold text-base" disabled>
         <svg className="inline animate-ping h-5 w-5 mr-3" viewBox="0 0 35 35">
           <circle className="path" cx="12" cy="15" r="10" fill="yellow" stroke="yellow" strokeWidth="2"></circle>
@@ -105,7 +105,7 @@ function Mint(props) {
   } else
     return (
       <div>
-        <button className="m-2 rounded-lg px-4 py-2 border-2 border-gray-200 text-gray-200
+        <button className="m-1 rounded-lg px-4 py-2 border-2 border-gray-200 text-gray-200
      hover:bg-gray-200 hover:text-gray-900 duration-300 font-mono font-bold text-base" onClick={mintMyNFT} disabled={props.traitsAvailability === '1'}>Mint (0.1)</button>
       </div>
     )

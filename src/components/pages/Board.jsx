@@ -311,11 +311,14 @@ export const Board = () => {
                             {chosenTrait.UnnamedNFTID}
                         </div>
 
-
-                        <div className='font-mono text-white list-none flex pb-3'>
-                            <div className='text-spot-yellow'>Name: </div>
-                            {textinput}
-                        </div>
+                        <div className="text-spot-yellow flex">BackGround: <div className='text-white flex px-2'>{unnamedData[`${(chosenTrait.UnnamedNFTID - 1)}`].attributes[0].value}</div></div>
+                        <div className="text-spot-yellow flex">Eyes: <div className='text-white flex px-2'>{unnamedData[`${(chosenTrait.UnnamedNFTID - 1)}`].attributes[1].value}</div></div>
+                        <div className="text-spot-yellow flex">Mouth: <div className='text-white flex px-2'>{unnamedData[`${(chosenTrait.UnnamedNFTID - 1)}`].attributes[2].value}</div></div>
+                        <div className="text-spot-yellow flex">Hat: <div className='text-white flex px-2'>{unnamedData[`${(chosenTrait.UnnamedNFTID - 1)}`].attributes[3].value}</div></div>
+                        <div className="text-spot-yellow flex">Skin: <div className='text-white flex px-2'>{unnamedData[`${(chosenTrait.UnnamedNFTID - 1)}`].attributes[4].value}</div></div>
+                        <div className="text-spot-yellow flex">Nose: <div className='text-white flex px-2'>{unnamedData[`${(chosenTrait.UnnamedNFTID - 1)}`].attributes[5].value}</div></div>
+                        <div className="text-spot-yellow flex">Special: <div className='text-white flex px-2'>{unnamedData[`${(chosenTrait.UnnamedNFTID - 1)}`].attributes[6].value}</div></div>
+                        <div className="text-spot-yellow flex">Lines: <div className='text-white flex px-2'>{unnamedData[`${(chosenTrait.UnnamedNFTID - 1)}`].attributes[7].value}</div></div>
                         {/* End of Indiv Stats */}
                         {/* Buttons */}
                         <div className="pt-1 pb-1 flex">
@@ -342,11 +345,11 @@ export const Board = () => {
                             <div className='text-spot-yellow font-bold pr-3 text-xl'>* </div>
                             Traits in your wallet:  {apiLoaded, checkMyTraits && walletTraits.length + ' nos.'} {apiLoaded, checkMyTraits && 'IDs: ' + walletTraits.map(trait => ' ' + trait)}
                         </div>*/}
-                        <div className='font-mono text-white list-none flex pb-3 text-sm'>
+                        <div className='font-mono text-white list-none flex pb-1 text-sm'>
                             <div className='text-[red] pr-3 text-xl'>* </div>
                             UnnamedNFT not in your wallet.
                         </div>
-                        <div className="flex"> <button className="w-full m-2 rounded-lg px-4 py-2 border-2 border-gray-200 text-gray-200
+                        <div className="flex"> <button className="w-full rounded-lg px-1 py-2 border-2 border-gray-200 text-gray-200
     hover:bg-gray-200 hover:text-gray-900 duration-300 font-mono font-bold text-base" onClick={() => {
                                 setOwnedCards(!ownedCards)
                             }}>{!ownedCards ? 'My UnnamedNFTs' : 'View All UnnamedNFTs'}</button></div>
