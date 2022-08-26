@@ -14,6 +14,10 @@ import image3007 from './unnamedImages/3007.png'
 import image3008 from './unnamedImages/3008.png'
 import image3009 from './unnamedImages/3009.png'
 import image3010 from './unnamedImages/3010.png'
+import image3011 from './unnamedImages/3011.png'
+import image3012 from './unnamedImages/3012.png'
+import image3013 from './unnamedImages/3013.png'
+import image3014 from './unnamedImages/3014.png'
 
 
 const traits = [
@@ -125,6 +129,34 @@ const traits = [
     id: 3010,
     image: image3010,
     nftName: 'Monkeez',
+    traitType: 'Branding',
+    rarity: 'Common'
+  },
+  {
+    id: 3011,
+    image: image3011,
+    nftName: 'Mambonauts',
+    traitType: 'Branding',
+    rarity: 'Common'
+  },
+  {
+    id: 3012,
+    image: image3012,
+    nftName: 'Mambonauts',
+    traitType: 'Branding',
+    rarity: 'Common'
+  },
+  {
+    id: 3013,
+    image: image3013,
+    nftName: 'Smol Run',
+    traitType: 'Branding',
+    rarity: 'Common'
+  },
+  {
+    id: 3014,
+    image: image3014,
+    nftName: 'Smol Run',
     traitType: 'Branding',
     rarity: 'Common'
   },
