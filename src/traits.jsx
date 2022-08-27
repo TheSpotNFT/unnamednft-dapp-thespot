@@ -65,6 +65,7 @@ const traits = [
   {
     id: 3001,
     image: image3001,
+    brand: 'The Spot',
     nftName: 'The Spot',
     traitType: 'Branding',
     rarity: 'Common'
@@ -72,6 +73,7 @@ const traits = [
   {
     id: 3002,
     image: image3002,
+    brand: 'The Spot',
     nftName: 'The Spot',
     traitType: 'Branding',
     rarity: 'Common'
@@ -79,6 +81,7 @@ const traits = [
   {
     id: 3003,
     image: image3003,
+    brand: 'Campfire',
     nftName: 'Campfire',
     traitType: 'Branding',
     rarity: 'Common'
@@ -86,6 +89,7 @@ const traits = [
   {
     id: 3004,
     image: image3004,
+    brand: 'Campfire',
     nftName: 'Campfire',
     traitType: 'Branding',
     rarity: 'Common'
@@ -93,6 +97,7 @@ const traits = [
   {
     id: 3005,
     image: image3005,
+    brand: 'Cuddlefish',
     nftName: 'Cuddlefish',
     traitType: 'Branding',
     rarity: 'Common'
@@ -100,6 +105,7 @@ const traits = [
   {
     id: 3006,
     image: image3006,
+    brand: 'Cuddlefish',
     nftName: 'Cuddlefish',
     traitType: 'Branding',
     rarity: 'Common'
@@ -107,6 +113,7 @@ const traits = [
   {
     id: 3007,
     image: image3007,
+    branding: 'Monkeez',
     nftName: 'Monkeez',
     traitType: 'Branding',
     rarity: 'Common'
@@ -114,6 +121,7 @@ const traits = [
   {
     id: 3008,
     image: image3008,
+    branding: 'Monkeez',
     nftName: 'Monkeez',
     traitType: 'Branding',
     rarity: 'Common'
@@ -121,6 +129,7 @@ const traits = [
   {
     id: 3009,
     image: image3009,
+    branding: 'Monkeez',
     nftName: 'Monkeez',
     traitType: 'Branding',
     rarity: 'Common'
@@ -128,6 +137,7 @@ const traits = [
   {
     id: 3010,
     image: image3010,
+    branding: 'Monkeez',
     nftName: 'Monkeez',
     traitType: 'Branding',
     rarity: 'Common'
@@ -135,6 +145,7 @@ const traits = [
   {
     id: 3011,
     image: image3011,
+    brand: 'Mambonauts',
     nftName: 'Mambonauts',
     traitType: 'Branding',
     rarity: 'Common'
@@ -142,6 +153,7 @@ const traits = [
   {
     id: 3012,
     image: image3012,
+    brand: 'Mambonauts',
     nftName: 'Mambonauts',
     traitType: 'Branding',
     rarity: 'Common'
@@ -149,6 +161,7 @@ const traits = [
   {
     id: 3013,
     image: image3013,
+    brand: 'Smol Run',
     nftName: 'Smol Run',
     traitType: 'Branding',
     rarity: 'Common'
@@ -156,6 +169,7 @@ const traits = [
   {
     id: 3014,
     image: image3014,
+    brand: 'Smol Run',
     nftName: 'Smol Run',
     traitType: 'Branding',
     rarity: 'Common'

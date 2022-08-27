@@ -34,7 +34,11 @@ export const Board = () => {
         Nose: '',
         Special: '',
         Lines: '',
-        Branding: 'None',
+
+    })
+
+    const [chosenBrand, setChosenBrand] = useState({
+        Branding: 'The Spot',
         BrandingID: '9999'
     })
 
@@ -70,6 +74,7 @@ export const Board = () => {
     function updateCanvasTraits(trait) {
         setCanvasImage(prevImage => ({ ...prevImage, [trait.traitType]: trait.image }))
         setChosenTrait(prevTrait => ({ ...prevTrait, [trait.traitType]: trait.traitName, [trait.traitType + 'ID']: trait.id }))
+        setChosenBrand(prevBrand => ({ ...prevBrand, [trait.traitType]: trait.brand }))
     }
 
     function createCard(trait) { //Building the card here from Card.jsx passing props and simultaneously fetching traits on click.
@@ -83,6 +88,7 @@ export const Board = () => {
                     traitName={trait.traitName}
                     image={trait.image}
                     id={trait.id}
+                    brand={trait.brand}
                 /></div>
         )
     }
@@ -169,7 +175,7 @@ export const Board = () => {
 
 
     // Add feature: Filter owned trait cards
-    const [ownedCards, setOwnedCards] = useState(false)
+    const [ownedCards, setOwnedCards] = useState(true)
     //---------------------------------//
 
     //filtering
@@ -219,7 +225,7 @@ export const Board = () => {
                         <div className="text-spot-yellow flex">Nose: <div className='text-white flex px-2'>{unnamedData[`${(chosenTrait.UnnamedNFTID - 1)}`].attributes[5].value}</div></div>
                         <div className="text-spot-yellow flex">Special: <div className='text-white flex px-2'>{unnamedData[`${(chosenTrait.UnnamedNFTID - 1)}`].attributes[6].value}</div></div>
                         <div className="text-spot-yellow flex">Lines: <div className='text-white flex px-2'>{unnamedData[`${(chosenTrait.UnnamedNFTID - 1)}`].attributes[7].value}</div></div>
-                        <div className="text-spot-yellow flex">Brand: <div className='text-white flex px-2'>{chosenTrait.Branding}</div></div>
+                        <div className="text-spot-yellow flex">Brand: <div className='text-white flex px-2'>{chosenBrand.Branding}</div></div>
                         {/* End of Indiv Stats */}
                         {/* Buttons */}
                         <div className="pt-1 pb-1 flex">
