@@ -15,8 +15,19 @@ export const Board = () => {
     const userAddress = account
     const unnamedNFTContract = "0x6BDAd2A83a8e70F459786a96a0a9159574685c0e";
     const spotNFTContract = '0x9455aa2aF62B529E49fBFE9D10d67990C0140AFC';
-
     const [filter, setFilter] = useState('');
+
+    //For Metadata
+    const [unnamedBackGround, setUnnamedBackGround] = useState();
+    const [unnamedEyes, setUnnamedEyes] = useState();
+    const [unnamedMouth, setUnnamedMouth] = useState();
+    const [unnamedHat, setUnnamedHat] = useState();
+    const [unnamedSkin, setUnnamedSkin] = useState();
+    const [unnamedNose, setUnnamedNose] = useState();
+    const [unnamedSpecial, setUnnamedSpecial] = useState();
+    const [unnamedLines, setUnnamedLines] = useState();
+    const [unnamedBrand, setUnnamedBrand] = useState();
+
 
     {/* For Image retrieval */ }
     const [canvasImage, setCanvasImage] = useState({
@@ -53,16 +64,17 @@ export const Board = () => {
     const [apiLoaded, setApiLoaded] = useState(false)
     const [checkMyTraits, setCheckMyTraits] = useState(false)
     const unnamedNFTdata = unnamedData;
-
+    //mainnet chain 0xa86a
+    //testnet chain 0xa869
     function getNFTs() {
-        const options = { chain: "0xa86a", address: userAddress, token_address: unnamedNFTContract };
+        const options = { chain: "0xa869", address: userAddress, token_address: unnamedNFTContract };
         Moralis.Web3API.account.getNFTsForContract(options).then((data) => {
             const result = data.result
             setWalletTraits(result.map(nft => nft.token_id))
             setApiLoaded(true)
 
         });
-
+        // 0xa869
     }
 
 
@@ -75,7 +87,19 @@ export const Board = () => {
         setCanvasImage(prevImage => ({ ...prevImage, [trait.traitType]: trait.image }))
         setChosenTrait(prevTrait => ({ ...prevTrait, [trait.traitType]: trait.traitName, [trait.traitType + 'ID']: trait.id }))
         setChosenBrand(prevBrand => ({ ...prevBrand, [trait.traitType]: trait.brand }))
+        setUnnamedBackGround(unnamedData[`${(chosenTrait.UnnamedNFTID - 1)}`].attributes[0].value)
+        setUnnamedEyes(unnamedData[`${(chosenTrait.UnnamedNFTID - 1)}`].attributes[1].value)
+        setUnnamedMouth(unnamedData[`${(chosenTrait.UnnamedNFTID - 1)}`].attributes[2].value)
+        setUnnamedHat(unnamedData[`${(chosenTrait.UnnamedNFTID - 1)}`].attributes[3].value)
+        setUnnamedSkin(unnamedData[`${(chosenTrait.UnnamedNFTID - 1)}`].attributes[4].value)
+        setUnnamedNose(unnamedData[`${(chosenTrait.UnnamedNFTID - 1)}`].attributes[5].value)
+        setUnnamedSpecial(unnamedData[`${(chosenTrait.UnnamedNFTID - 1)}`].attributes[6].value)
+        setUnnamedLines(unnamedData[`${(chosenTrait.UnnamedNFTID - 1)}`].attributes[7].value)
+        setUnnamedBrand(chosenBrand.Branding)
+
     }
+
+
 
     function createCard(trait) { //Building the card here from Card.jsx passing props and simultaneously fetching traits on click.
         return (
@@ -217,15 +241,15 @@ export const Board = () => {
                             {chosenTrait.UnnamedNFTID}
                         </div>
 
-                        <div className="text-spot-yellow flex">BackGround: <div className='text-white flex px-2'>{unnamedData[`${(chosenTrait.UnnamedNFTID - 1)}`].attributes[0].value}</div></div>
-                        <div className="text-spot-yellow flex">Eyes: <div className='text-white flex px-2'>{unnamedData[`${(chosenTrait.UnnamedNFTID - 1)}`].attributes[1].value}</div></div>
-                        <div className="text-spot-yellow flex">Mouth: <div className='text-white flex px-2'>{unnamedData[`${(chosenTrait.UnnamedNFTID - 1)}`].attributes[2].value}</div></div>
-                        <div className="text-spot-yellow flex">Hat: <div className='text-white flex px-2'>{unnamedData[`${(chosenTrait.UnnamedNFTID - 1)}`].attributes[3].value}</div></div>
-                        <div className="text-spot-yellow flex">Skin: <div className='text-white flex px-2'>{unnamedData[`${(chosenTrait.UnnamedNFTID - 1)}`].attributes[4].value}</div></div>
-                        <div className="text-spot-yellow flex">Nose: <div className='text-white flex px-2'>{unnamedData[`${(chosenTrait.UnnamedNFTID - 1)}`].attributes[5].value}</div></div>
-                        <div className="text-spot-yellow flex">Special: <div className='text-white flex px-2'>{unnamedData[`${(chosenTrait.UnnamedNFTID - 1)}`].attributes[6].value}</div></div>
-                        <div className="text-spot-yellow flex">Lines: <div className='text-white flex px-2'>{unnamedData[`${(chosenTrait.UnnamedNFTID - 1)}`].attributes[7].value}</div></div>
-                        <div className="text-spot-yellow flex">Brand: <div className='text-white flex px-2'>{chosenBrand.Branding}</div></div>
+                        <div className="text-spot-yellow flex">BackGround: <div className='text-white flex px-2'>{unnamedBackGround}</div></div>
+                        <div className="text-spot-yellow flex">Eyes: <div className='text-white flex px-2'>{unnamedEyes}</div></div>
+                        <div className="text-spot-yellow flex">Mouth: <div className='text-white flex px-2'>{unnamedMouth}</div></div>
+                        <div className="text-spot-yellow flex">Hat: <div className='text-white flex px-2'>{unnamedHat}</div></div>
+                        <div className="text-spot-yellow flex">Skin: <div className='text-white flex px-2'>{unnamedSkin}</div></div>
+                        <div className="text-spot-yellow flex">Nose: <div className='text-white flex px-2'>{unnamedNose}</div></div>
+                        <div className="text-spot-yellow flex">Special: <div className='text-white flex px-2'>{unnamedSpecial}</div></div>
+                        <div className="text-spot-yellow flex">Lines: <div className='text-white flex px-2'>{unnamedLines}</div></div>
+                        <div className="text-spot-yellow flex">Brand: <div className='text-white flex px-2'>{unnamedBrand}</div></div>
                         {/* End of Indiv Stats */}
                         {/* Buttons */}
                         <div className="pt-1 pb-1 flex">
@@ -233,6 +257,15 @@ export const Board = () => {
                             <Mint
                                 chosenTrait={chosenTrait}
                                 walletTraits={walletTraits}
+                                unnamedBackGround={unnamedBackGround}
+                                unnamedBrand={unnamedBrand}
+                                unnamedEyes={unnamedEyes}
+                                unnamedMouth={unnamedMouth}
+                                unnamedHat={unnamedHat}
+                                unnamedSkin={unnamedSkin}
+                                unnamedNose={unnamedNose}
+                                unnamedSpecial={unnamedSpecial}
+                                unnamedLines={unnamedLines}
                                 saveImage={saveImage}
                                 userAddress={userAddress}
                                 canvas={chosenTrait}

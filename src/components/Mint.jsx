@@ -10,10 +10,8 @@ import unnamedData from '../metadata';
 
 function Mint(props) {
   const [isLoading, setIsLoading] = useState(false)
-  const unnamedNFTBrandingContract = "0x6BDAd2A83a8e70F459786a96a0a9159574685c0e";
-  const spotNFTContract = '0x9455aa2aF62B529E49fBFE9D10d67990C0140AFC';
-  const background = props.chosenTrait.background;
-  const lines = props.chosenTrait.text;
+  const unnamedNFTBrandingContract = "0xbb8e5cFe864015239C762C0Ae3A59CeadB3090fE";
+  const unnamedNFTContract = '0x6BDAd2A83a8e70F459786a96a0a9159574685c0e';
   const unnamedNFTdata = unnamedData;
   const chosenTrait = useState();
   const chosenBrand = useState();
@@ -50,35 +48,35 @@ function Mint(props) {
       "attributes": [
         {
           "trait_type": "Eyes:",
-          "value": unnamedData[`${(chosenTrait.UnnamedNFTID - 1)}`].attributes[1].value
+          "value": props.unnamedEyes
         },
         {
           "trait_type": "Mouth",
-          "value": unnamedData[`${(chosenTrait.UnnamedNFTID - 1)}`].attributes[2].value
+          "value": props.unnamedMouth
         },
         {
           "trait_type": "Hat",
-          "value": unnamedData[`${(chosenTrait.UnnamedNFTID - 1)}`].attributes[3].value
+          "value": props.unnamedHat
         },
         {
           "trait_type": "Skin",
-          "value": unnamedData[`${(chosenTrait.UnnamedNFTID - 1)}`].attributes[4].value
+          "value": props.unnamedSkin
         },
         {
           "trait_type": "Nose",
-          "value": unnamedData[`${(chosenTrait.UnnamedNFTID - 1)}`].attributes[5].value
+          "value": props.unnamedNose
         },
         {
           "trait_type": "Special",
-          "value": unnamedData[`${(chosenTrait.UnnamedNFTID - 1)}`].attributes[6].value
+          "value": props.unnamedSpecial
         },
         {
           "trait_type": "Lines",
-          "value": unnamedData[`${(chosenTrait.UnnamedNFTID - 1)}`].attributes[7].value
+          "value": props.unnamedLines
         },
         {
           "trait_type": "Brand",
-          "value": props.chosenBrand.Branding
+          "value": props.unnamedBrand
         },
 
       ],
@@ -99,6 +97,7 @@ function Mint(props) {
       onError: (err) => {
         setIsLoading(false)
         alert(JSON.stringify(err.data.message));
+
 
       },
       onSuccess: (tx) => {
@@ -125,7 +124,7 @@ function Mint(props) {
     return (
       <div>
         <button className="m-1 rounded-lg px-4 py-2 border-2 border-gray-200 text-gray-200
-     hover:bg-gray-200 hover:text-gray-900 duration-300 font-mono font-bold text-base" onClick={mintMyNFT} disabled={props.traitsAvailability === '1'}>Mint (0.2)</button>
+     hover:bg-gray-200 hover:text-gray-900 duration-300 font-mono font-bold text-base" onClick={mintMyNFT}>Mint (0.2)</button>
       </div>
     )
 }
