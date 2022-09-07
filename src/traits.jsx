@@ -3018,6 +3018,8 @@ import image3017 from './unnamedImages/3017.png'
 import image3018 from './unnamedImages/3018.png'
 import image3019 from './unnamedImages/3019.png'
 import image3020 from './unnamedImages/3020.png'
+import image3021 from './unnamedImages/3021.png'
+import image3022 from './unnamedImages/3022.png'
 
 
 
@@ -6179,6 +6181,22 @@ const traits = [
     image: image3020,
     brand: 'AvaSharks',
     nftName: 'AvaSharks',
+    traitType: 'Branding',
+    rarity: 'Common'
+  },
+  {
+    id: 3021,
+    image: image3021,
+    brand: 'Rillaz',
+    nftName: 'Rillaz',
+    traitType: 'Branding',
+    rarity: 'Common'
+  },
+  {
+    id: 3022,
+    image: image3022,
+    brand: 'Rillaz',
+    nftName: 'Rillaz',
     traitType: 'Branding',
     rarity: 'Common'
   },
