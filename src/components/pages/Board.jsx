@@ -13,8 +13,8 @@ import Mint from '../Mint';
 export const Board = () => {
     const { account, isAuthenticated } = useMoralis();
     const userAddress = account
-    const unnamedNFTContract = "0x6BDAd2A83a8e70F459786a96a0a9159574685c0e";
-    const spotNFTContract = '0x9455aa2aF62B529E49fBFE9D10d67990C0140AFC';
+    const unnamedNFTContract = "0x6bdad2a83a8e70f459786a96a0a9159574685c0e";
+    const spotNFTContract = '0x0C6945E825fc3c80F0a1eA1d3E24d6854F7460d8';
     const [filter, setFilter] = useState('');
 
     //For Metadata
@@ -68,7 +68,7 @@ export const Board = () => {
     //mainnet chain 0xa86a
     //testnet chain 0xa869
     function getNFTs() {
-        const options = { chain: "0xa869", address: userAddress, token_address: unnamedNFTContract };
+        const options = { chain: "0xa86a", address: userAddress, token_address: unnamedNFTContract };
         Moralis.Web3API.account.getNFTsForContract(options).then((data) => {
             const result = data.result
             setWalletTraits(result.map(nft => nft.token_id))
