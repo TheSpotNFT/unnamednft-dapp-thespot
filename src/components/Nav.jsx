@@ -7,12 +7,12 @@ import { GiHamburgerMenu } from "react-icons/gi"
 export const Nav = () => {
     let Links = [
         { name: "Home", link: "https://thespot.art" },
-        {/*{ name: "Roadmap", link: "/roadmap" },
-        { name: "Team", link: "/team" },
-        { name: "Spot-Links", link: "/ecosystem" },
+        { name: "Unnamed Branded Collection", link: "https://campfire.exchange/collections/0xb043aaeb4337ea4bbb20c2ec5d846b00a0825ba5" },
+        { name: "UnnamedNFT Collection", link: "https://campfire.exchange/collections/0x6bdad2a83a8e70f459786a96a0a9159574685c0e" },
+        /*{ name: "Spot-Links", link: "/ecosystem" },
         { name: "Buy Traits", link: "https://nftrade.com/assets/avalanche/0x9521807adf320d1cdf87afdf875bf438d1d92d87" },
         { name: "Twitter", link: "https://twitter.com/TheSpotnft" },
-    { name: "Discord", link: "https://discord.com/invite/4wvC6xTFyB" }*/}
+    { name: "Discord", link: "https://discord.com/invite/4wvC6xTFyB" }*/
     ];
     const [open, setOpen] = useState(false);
 
