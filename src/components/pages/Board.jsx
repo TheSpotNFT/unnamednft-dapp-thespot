@@ -228,7 +228,7 @@ export const Board = () => {
             <div className='container flex-auto mx-auto w-full'>
 
                 {/* Canvas Row*/}
-                <div className="lg:sticky top-20 grid 2xl:grid-cols-4 xl:grid-cols-2 lg:grid-cols-2 md:grid-cols-1 sm:grid-cols-1 gap-4 mt-1 ml-6 sm:p-5 bg-slate-900 lg:pb-3">
+                <div className="lg:sticky top-20 grid 2xl:grid-cols-3 xl:grid-cols-2 lg:grid-cols-2 md:grid-cols-1 sm:grid-cols-1 gap-4 mt-1 ml-6 sm:p-5 bg-slate-900 lg:pb-3">
                     {/* canvas div */}
 
                     <div className="p-1 mb-10 sm:mb-10" ref={div} style={{ height: "23rem", width: "23rem" }}>
