@@ -27,6 +27,7 @@ export const Board = () => {
     const [unnamedSpecial, setUnnamedSpecial] = useState();
     const [unnamedLines, setUnnamedLines] = useState();
     const [unnamedBrand, setUnnamedBrand] = useState();
+    const [unnamedID, setUnnamedID] = useState();
 
 
     {/* For Image retrieval */ }
@@ -49,8 +50,8 @@ export const Board = () => {
     })
 
     const [chosenBrand, setChosenBrand] = useState({
-        Branding: 'The Spot',
-        BrandingID: '9999'
+        Branding: '',
+        BrandingID: ''
     })
 
 
@@ -82,22 +83,32 @@ export const Board = () => {
         getNFTs();
     }, [account])
 
+    useEffect(() => {
+        updateTraitMetaData();
+    }, [chosenTrait])
 
-    function updateCanvasTraits(trait) {
+
+    async function updateCanvasTraits(trait) {
         setCanvasImage(prevImage => ({ ...prevImage, [trait.traitType]: trait.image }))
         setChosenTrait(prevTrait => ({ ...prevTrait, [trait.traitType]: trait.traitName, [trait.traitType + 'ID']: trait.id }))
         setChosenBrand(prevBrand => ({ ...prevBrand, [trait.traitType]: trait.brand }))
-        setUnnamedBackGround(unnamedData[`${(chosenTrait.UnnamedNFTID - 1)}`].attributes[0].value)
-        setUnnamedEyes(unnamedData[`${(chosenTrait.UnnamedNFTID - 1)}`].attributes[1].value)
-        setUnnamedMouth(unnamedData[`${(chosenTrait.UnnamedNFTID - 1)}`].attributes[2].value)
-        setUnnamedHat(unnamedData[`${(chosenTrait.UnnamedNFTID - 1)}`].attributes[3].value)
-        setUnnamedSkin(unnamedData[`${(chosenTrait.UnnamedNFTID - 1)}`].attributes[4].value)
-        setUnnamedNose(unnamedData[`${(chosenTrait.UnnamedNFTID - 1)}`].attributes[5].value)
-        setUnnamedSpecial(unnamedData[`${(chosenTrait.UnnamedNFTID - 1)}`].attributes[6].value)
-        setUnnamedLines(unnamedData[`${(chosenTrait.UnnamedNFTID - 1)}`].attributes[7].value)
-        setUnnamedBrand(chosenBrand.Branding)
+
 
     }
+
+    function updateTraitMetaData() {
+        setUnnamedBackGround(unnamedData[`${(chosenTrait.UnnamedNFTID - 1)}`].attributes[0].value);
+        setUnnamedEyes(unnamedData[`${(chosenTrait.UnnamedNFTID - 1)}`].attributes[1].value);
+        setUnnamedMouth(unnamedData[`${(chosenTrait.UnnamedNFTID - 1)}`].attributes[2].value);
+        setUnnamedHat(unnamedData[`${(chosenTrait.UnnamedNFTID - 1)}`].attributes[3].value);
+        setUnnamedSkin(unnamedData[`${(chosenTrait.UnnamedNFTID - 1)}`].attributes[4].value);
+        setUnnamedNose(unnamedData[`${(chosenTrait.UnnamedNFTID - 1)}`].attributes[5].value);
+        setUnnamedSpecial(unnamedData[`${(chosenTrait.UnnamedNFTID - 1)}`].attributes[6].value);
+        setUnnamedLines(unnamedData[`${(chosenTrait.UnnamedNFTID - 1)}`].attributes[7].value);
+        setUnnamedBrand(chosenBrand.Branding);
+        setUnnamedID(chosenTrait.UnnamedNFTID)
+    }
+
 
 
 
@@ -106,6 +117,7 @@ export const Board = () => {
 
             <div key={trait.edition} onClick={() => {
                 updateCanvasTraits(trait)
+
             }}> <Card
                     nftName={trait.nftName}
                     traitType={trait.traitType}
@@ -121,7 +133,7 @@ export const Board = () => {
     const searchText = (event) => {
         setFilter(event.target.value);
     }
-*/
+    */
 
     let dataSearch = traits.filter(item => {
         return Object.keys(item).some(key => item[key].toString().toLowerCase().includes(filter.toString().toLowerCase())
@@ -179,6 +191,7 @@ export const Board = () => {
     useEffect(() => {
         drawImage(canvasImage.UnnamedNFT);
         drawImage(canvasImage.Branding);
+
 
     }
         , [canvasImage, canvas, windowWidth, windowHeight])
@@ -249,7 +262,7 @@ export const Board = () => {
                         <div className="text-spot-yellow flex">Nose: <div className='text-white flex px-2'>{unnamedNose}</div></div>
                         <div className="text-spot-yellow flex">Special: <div className='text-white flex px-2'>{unnamedSpecial}</div></div>
                         <div className="text-spot-yellow flex">Lines: <div className='text-white flex px-2'>{unnamedLines}</div></div>
-                        <div className="text-spot-yellow flex">Brand: <div className='text-white flex px-2'>{unnamedBrand}</div></div>
+                        <div className="text-spot-yellow flex">Brand: <div className='text-white flex px-2'>{chosenBrand.Branding}</div></div>
                         {/* End of Indiv Stats */}
                         {/* Buttons */}
                         <div className="pt-1 pb-1 flex">
@@ -266,6 +279,7 @@ export const Board = () => {
                                 unnamedNose={unnamedNose}
                                 unnamedSpecial={unnamedSpecial}
                                 unnamedLines={unnamedLines}
+                                unnamedID={unnamedID}
                                 saveImage={saveImage}
                                 userAddress={userAddress}
                                 canvas={chosenTrait}
@@ -285,11 +299,11 @@ export const Board = () => {
                             <div className='text-spot-yellow font-bold pr-3 text-xl'>* </div>
                             Traits in your wallet:  {apiLoaded, checkMyTraits && walletTraits.length + ' nos.'} {apiLoaded, checkMyTraits && 'IDs: ' + walletTraits.map(trait => ' ' + trait)}
                         </div>*/}
-                        <div className='font-mono text-white list-none flex pb-1 text-sm'>
+                        <div className='font-mono text-white list-none flex text-sm'>
                             <div className='text-[red] pr-3 text-xl'>* </div>
                             UnnamedNFT not in your wallet.
                         </div>
-                        <div className="flex"> <button className="w-full rounded-lg px-1 py-2 border-2 border-gray-200 text-gray-200
+                        <div className="flex"> <button className="w-full rounded-lg px-1 py-1 border-2 border-gray-200 text-gray-200
     hover:bg-gray-200 hover:text-gray-900 duration-300 font-mono font-bold text-base" onClick={() => {
                                 setOwnedCards(!ownedCards)
                             }}>{!ownedCards ? 'My UnnamedNFTs' : 'View All UnnamedNFTs'}</button></div>

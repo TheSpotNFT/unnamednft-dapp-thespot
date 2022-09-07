@@ -3012,6 +3012,10 @@ import image3011 from './unnamedImages/3011.png'
 import image3012 from './unnamedImages/3012.png'
 import image3013 from './unnamedImages/3013.png'
 import image3014 from './unnamedImages/3014.png'
+import image3015 from './unnamedImages/3015.png'
+import image3016 from './unnamedImages/3016.png'
+import image3017 from './unnamedImages/3017.png'
+import image3018 from './unnamedImages/3018.png'
 
 
 const traits = [
@@ -6066,7 +6070,7 @@ const traits = [
   {
     id: 3007,
     image: image3007,
-    branding: 'Monkeez',
+    brand: 'Monkeez',
     nftName: 'Monkeez',
     traitType: 'Branding',
     rarity: 'Common'
@@ -6074,7 +6078,7 @@ const traits = [
   {
     id: 3008,
     image: image3008,
-    branding: 'Monkeez',
+    brand: 'Monkeez',
     nftName: 'Monkeez',
     traitType: 'Branding',
     rarity: 'Common'
@@ -6082,7 +6086,7 @@ const traits = [
   {
     id: 3009,
     image: image3009,
-    branding: 'Monkeez',
+    brand: 'Monkeez',
     nftName: 'Monkeez',
     traitType: 'Branding',
     rarity: 'Common'
@@ -6090,7 +6094,7 @@ const traits = [
   {
     id: 3010,
     image: image3010,
-    branding: 'Monkeez',
+    brand: 'Monkeez',
     nftName: 'Monkeez',
     traitType: 'Branding',
     rarity: 'Common'
@@ -6127,7 +6131,38 @@ const traits = [
     traitType: 'Branding',
     rarity: 'Common'
   },
-
+  {
+    id: 3015,
+    image: image3015,
+    brand: 'Avax Whales',
+    nftName: 'Avax Whale',
+    traitType: 'Branding',
+    rarity: 'Common'
+  },
+  {
+    id: 3016,
+    image: image3016,
+    brand: 'Avax Whales',
+    nftName: 'Avax Whales',
+    traitType: 'Branding',
+    rarity: 'Common'
+  },
+  {
+    id: 3017,
+    image: image3017,
+    brand: 'Avax Apes',
+    nftName: 'Avax Apes',
+    traitType: 'Branding',
+    rarity: 'Common'
+  },
+  {
+    id: 3018,
+    image: image3018,
+    brand: 'Avax Apes',
+    nftName: 'Avax Apes',
+    traitType: 'Branding',
+    rarity: 'Common'
+  },
 
 
 ]

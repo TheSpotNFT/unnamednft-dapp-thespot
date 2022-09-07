@@ -33,13 +33,13 @@ function App() {
         (chainId !== '0xa869')&&switchNetwork("0xa869")
   }, [isAuthenticated, isWeb3Enabled, chain]);
 
-    if (!isAuthenticated || account===null) {
+   /* if (!isAuthenticated || account===null) {
       
       return (
         <Authenticate />
       );
     }
-  
+  */
     return (
       <div className='App bg-slate-900'>
       <Router>
