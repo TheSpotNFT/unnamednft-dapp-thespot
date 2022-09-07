@@ -3020,10 +3020,223 @@ import image3019 from './unnamedImages/3019.png'
 import image3020 from './unnamedImages/3020.png'
 import image3021 from './unnamedImages/3021.png'
 import image3022 from './unnamedImages/3022.png'
+import image3023 from './unnamedImages/3023.png'
+import image3024 from './unnamedImages/3024.png'
+import image3025 from './unnamedImages/3025.png'
+import image3026 from './unnamedImages/3026.png'
 
 
 
 const traits = [
+  {
+    id: 3001,
+    image: image3001,
+    brand: 'The Spot',
+    nftName: 'The Spot',
+    traitType: 'Branding',
+    rarity: 'Common'
+  },
+  {
+    id: 3002,
+    image: image3002,
+    brand: 'The Spot',
+    nftName: 'The Spot',
+    traitType: 'Branding',
+    rarity: 'Common'
+  },
+  {
+    id: 3003,
+    image: image3003,
+    brand: 'Campfire',
+    nftName: 'Campfire',
+    traitType: 'Branding',
+    rarity: 'Common'
+  },
+  {
+    id: 3004,
+    image: image3004,
+    brand: 'Campfire',
+    nftName: 'Campfire',
+    traitType: 'Branding',
+    rarity: 'Common'
+  },
+  {
+    id: 3005,
+    image: image3005,
+    brand: 'Cuddlefish',
+    nftName: 'Cuddlefish',
+    traitType: 'Branding',
+    rarity: 'Common'
+  },
+  {
+    id: 3006,
+    image: image3006,
+    brand: 'Cuddlefish',
+    nftName: 'Cuddlefish',
+    traitType: 'Branding',
+    rarity: 'Common'
+  },
+  {
+    id: 3007,
+    image: image3007,
+    brand: 'Monkeez',
+    nftName: 'Monkeez',
+    traitType: 'Branding',
+    rarity: 'Common'
+  },
+  {
+    id: 3008,
+    image: image3008,
+    brand: 'Monkeez',
+    nftName: 'Monkeez',
+    traitType: 'Branding',
+    rarity: 'Common'
+  },
+  {
+    id: 3009,
+    image: image3009,
+    brand: 'Monkeez',
+    nftName: 'Monkeez',
+    traitType: 'Branding',
+    rarity: 'Common'
+  },
+  {
+    id: 3010,
+    image: image3010,
+    brand: 'Monkeez',
+    nftName: 'Monkeez',
+    traitType: 'Branding',
+    rarity: 'Common'
+  },
+  {
+    id: 3011,
+    image: image3011,
+    brand: 'Mambonauts',
+    nftName: 'Mambonauts',
+    traitType: 'Branding',
+    rarity: 'Common'
+  },
+  {
+    id: 3012,
+    image: image3012,
+    brand: 'Mambonauts',
+    nftName: 'Mambonauts',
+    traitType: 'Branding',
+    rarity: 'Common'
+  },
+  {
+    id: 3013,
+    image: image3013,
+    brand: 'Smol Run',
+    nftName: 'Smol Run',
+    traitType: 'Branding',
+    rarity: 'Common'
+  },
+  {
+    id: 3014,
+    image: image3014,
+    brand: 'Smol Run',
+    nftName: 'Smol Run',
+    traitType: 'Branding',
+    rarity: 'Common'
+  },
+  {
+    id: 3015,
+    image: image3015,
+    brand: 'Avax Whales',
+    nftName: 'Avax Whale',
+    traitType: 'Branding',
+    rarity: 'Common'
+  },
+  {
+    id: 3016,
+    image: image3016,
+    brand: 'Avax Whales',
+    nftName: 'Avax Whales',
+    traitType: 'Branding',
+    rarity: 'Common'
+  },
+  {
+    id: 3017,
+    image: image3017,
+    brand: 'Avax Apes',
+    nftName: 'Avax Apes',
+    traitType: 'Branding',
+    rarity: 'Common'
+  },
+  {
+    id: 3018,
+    image: image3018,
+    brand: 'Avax Apes',
+    nftName: 'Avax Apes',
+    traitType: 'Branding',
+    rarity: 'Common'
+  },
+  {
+    id: 3019,
+    image: image3019,
+    brand: 'AvaSharks',
+    nftName: 'AvaSharks',
+    traitType: 'Branding',
+    rarity: 'Common'
+  },
+  {
+    id: 3020,
+    image: image3020,
+    brand: 'AvaSharks',
+    nftName: 'AvaSharks',
+    traitType: 'Branding',
+    rarity: 'Common'
+  },
+  {
+    id: 3021,
+    image: image3021,
+    brand: 'Rillaz',
+    nftName: 'Rillaz',
+    traitType: 'Branding',
+    rarity: 'Common'
+  },
+  {
+    id: 3022,
+    image: image3022,
+    brand: 'Rillaz',
+    nftName: 'Rillaz',
+    traitType: 'Branding',
+    rarity: 'Common'
+  },
+  {
+    id: 3023,
+    image: image3023,
+    brand: 'Garbage Man Gang',
+    nftName: 'Garbage Man Gang',
+    traitType: 'Branding',
+    rarity: 'Common'
+  },
+  {
+    id: 3024,
+    image: image3024,
+    brand: 'Garbage Man Gang',
+    nftName: 'Garbage Man Gang',
+    traitType: 'Branding',
+    rarity: 'Common'
+  },
+  {
+    id: 3025,
+    image: image3025,
+    brand: 'Them',
+    nftName: 'Them',
+    traitType: 'Branding',
+    rarity: 'Common'
+  },
+  {
+    id: 3026,
+    image: image3026,
+    brand: 'Them',
+    nftName: 'Them',
+    traitType: 'Branding',
+    rarity: 'Common'
+  },
+
   { id: 1, image: image1, nftName: 'UnnamedNFT', traitType: 'UnnamedNFT', },
   { id: 2, image: image2, nftName: 'UnnamedNFT', traitType: 'UnnamedNFT', },
   { id: 3, image: image3, nftName: 'UnnamedNFT', traitType: 'UnnamedNFT', },
@@ -6024,182 +6237,6 @@ const traits = [
   { id: 2998, image: image2998, nftName: 'UnnamedNFT', traitType: 'UnnamedNFT', },
   { id: 2999, image: image2999, nftName: 'UnnamedNFT', traitType: 'UnnamedNFT', },
   { id: 3000, image: image3000, nftName: 'UnnamedNFT', traitType: 'UnnamedNFT', },
-  {
-    id: 3001,
-    image: image3001,
-    brand: 'The Spot',
-    nftName: 'The Spot',
-    traitType: 'Branding',
-    rarity: 'Common'
-  },
-  {
-    id: 3002,
-    image: image3002,
-    brand: 'The Spot',
-    nftName: 'The Spot',
-    traitType: 'Branding',
-    rarity: 'Common'
-  },
-  {
-    id: 3003,
-    image: image3003,
-    brand: 'Campfire',
-    nftName: 'Campfire',
-    traitType: 'Branding',
-    rarity: 'Common'
-  },
-  {
-    id: 3004,
-    image: image3004,
-    brand: 'Campfire',
-    nftName: 'Campfire',
-    traitType: 'Branding',
-    rarity: 'Common'
-  },
-  {
-    id: 3005,
-    image: image3005,
-    brand: 'Cuddlefish',
-    nftName: 'Cuddlefish',
-    traitType: 'Branding',
-    rarity: 'Common'
-  },
-  {
-    id: 3006,
-    image: image3006,
-    brand: 'Cuddlefish',
-    nftName: 'Cuddlefish',
-    traitType: 'Branding',
-    rarity: 'Common'
-  },
-  {
-    id: 3007,
-    image: image3007,
-    brand: 'Monkeez',
-    nftName: 'Monkeez',
-    traitType: 'Branding',
-    rarity: 'Common'
-  },
-  {
-    id: 3008,
-    image: image3008,
-    brand: 'Monkeez',
-    nftName: 'Monkeez',
-    traitType: 'Branding',
-    rarity: 'Common'
-  },
-  {
-    id: 3009,
-    image: image3009,
-    brand: 'Monkeez',
-    nftName: 'Monkeez',
-    traitType: 'Branding',
-    rarity: 'Common'
-  },
-  {
-    id: 3010,
-    image: image3010,
-    brand: 'Monkeez',
-    nftName: 'Monkeez',
-    traitType: 'Branding',
-    rarity: 'Common'
-  },
-  {
-    id: 3011,
-    image: image3011,
-    brand: 'Mambonauts',
-    nftName: 'Mambonauts',
-    traitType: 'Branding',
-    rarity: 'Common'
-  },
-  {
-    id: 3012,
-    image: image3012,
-    brand: 'Mambonauts',
-    nftName: 'Mambonauts',
-    traitType: 'Branding',
-    rarity: 'Common'
-  },
-  {
-    id: 3013,
-    image: image3013,
-    brand: 'Smol Run',
-    nftName: 'Smol Run',
-    traitType: 'Branding',
-    rarity: 'Common'
-  },
-  {
-    id: 3014,
-    image: image3014,
-    brand: 'Smol Run',
-    nftName: 'Smol Run',
-    traitType: 'Branding',
-    rarity: 'Common'
-  },
-  {
-    id: 3015,
-    image: image3015,
-    brand: 'Avax Whales',
-    nftName: 'Avax Whale',
-    traitType: 'Branding',
-    rarity: 'Common'
-  },
-  {
-    id: 3016,
-    image: image3016,
-    brand: 'Avax Whales',
-    nftName: 'Avax Whales',
-    traitType: 'Branding',
-    rarity: 'Common'
-  },
-  {
-    id: 3017,
-    image: image3017,
-    brand: 'Avax Apes',
-    nftName: 'Avax Apes',
-    traitType: 'Branding',
-    rarity: 'Common'
-  },
-  {
-    id: 3018,
-    image: image3018,
-    brand: 'Avax Apes',
-    nftName: 'Avax Apes',
-    traitType: 'Branding',
-    rarity: 'Common'
-  },
-  {
-    id: 3019,
-    image: image3019,
-    brand: 'AvaSharks',
-    nftName: 'AvaSharks',
-    traitType: 'Branding',
-    rarity: 'Common'
-  },
-  {
-    id: 3020,
-    image: image3020,
-    brand: 'AvaSharks',
-    nftName: 'AvaSharks',
-    traitType: 'Branding',
-    rarity: 'Common'
-  },
-  {
-    id: 3021,
-    image: image3021,
-    brand: 'Rillaz',
-    nftName: 'Rillaz',
-    traitType: 'Branding',
-    rarity: 'Common'
-  },
-  {
-    id: 3022,
-    image: image3022,
-    brand: 'Rillaz',
-    nftName: 'Rillaz',
-    traitType: 'Branding',
-    rarity: 'Common'
-  },
 
 ]
 export default traits;
