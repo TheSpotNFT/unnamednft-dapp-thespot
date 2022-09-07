@@ -6175,8 +6175,8 @@ const traits = [
     rarity: 'Common'
   },
   {
-    id: 3019,
-    image: image3019,
+    id: 3020,
+    image: image3020,
     brand: 'AvaSharks',
     nftName: 'AvaSharks',
     traitType: 'Branding',
