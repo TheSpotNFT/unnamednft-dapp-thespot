@@ -247,7 +247,7 @@ export const Board = () => {
                     </div>
                     {/* canvas div ends */}
                     {/* Stats div*/}
-                    <div className='grow border-dashed border-4 border-slate-500 p-3 pl-5 m-1 text-left col-span-1 w-80 md:mt-10 lg:mt-2 mt-10 sm:mt-10 text-sm' style={{ height: "23rem", width: "23rem" }}>
+                    <div className='grow border-dashed border-4 border-slate-500 p-3 pl-5 m-1 text-left col-span-1 w-80 md:mt-10 lg:mt-2 mt-10 sm:mt-10 text-sm' style={{ height: "26rem", width: "23rem" }}>
                         {/* Individual Stats */}
                         <div className='font-mono text-white list-none flex'>
                             <div className={`text-${(walletTraits.includes(`${chosenTrait.UnnamedNFTID}`)) ? "spot-yellow" : "[red]"} font-bold pr-3 pl-2`}>UnnamedNFT: </div>
@@ -299,11 +299,12 @@ export const Board = () => {
                             <div className='text-spot-yellow font-bold pr-3 text-xl'>* </div>
                             Traits in your wallet:  {apiLoaded, checkMyTraits && walletTraits.length + ' nos.'} {apiLoaded, checkMyTraits && 'IDs: ' + walletTraits.map(trait => ' ' + trait)}
                         </div>*/}
-                        <div className='font-mono text-white list-none flex text-sm'>
+                        <div className='font-mono text-white list-none flex text-sm pl-2'>
+                            You must approve your unnamedNFT to be burnt before minting
                             <div className='text-[red] pr-3 text-xl'>* </div>
                             UnnamedNFT not in your wallet.
                         </div>
-                        <div className="flex pr-2 pl-2"> <button className="w-full rounded-lg px-1 py-1 border-2 border-gray-200 text-gray-200
+                        <div className="flex pr-2 pl-2 pt-2"> <button className="w-full rounded-lg px-1 py-1 border-2 border-gray-200 text-gray-200
     hover:bg-gray-200 hover:text-gray-900 duration-300 font-mono font-bold text-base" onClick={() => {
                                 setOwnedCards(!ownedCards)
                             }}>{!ownedCards ? 'My UnnamedNFTs' : 'View All UnnamedNFTs'}</button></div>
