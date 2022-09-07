@@ -293,8 +293,8 @@ function Mint(props) {
 
       <div className="flex">
 
-        <button className="m-1 w-max rounded-lg px-1 py-1 border-2 border-gray-200 text-gray-200
-     hover:bg-gray-200 hover:text-gray-900 duration-300 font-mono font-bold text-base" onClick={setApproval}>Approve</button>
+        <button className="m-1 rounded-lg px-1 py-1 border-2 border-gray-200 text-gray-200
+     hover:bg-gray-200 hover:text-gray-900 duration-300 font-mono font-bold text-base" onClick={setApproval}>Approve Unnamed</button>
 
         <button className="m-1 rounded-lg px-1 py-1 border-2 border-gray-200 text-gray-200
      hover:bg-gray-200 hover:text-gray-900 duration-300 font-mono font-bold text-base" onClick={mintMyNFT}>Mint (0.2)</button>

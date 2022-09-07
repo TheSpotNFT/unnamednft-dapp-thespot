@@ -180,7 +180,7 @@ export const Board = () => {
         imgHidden.onload = () => {
             const ctxHidden = hiddenCanvas.current.getContext("2d")
             ctxHidden.clearRect(0, 0, hiddenCanvas.width, hiddenCanvas.height);
-            ctxHidden.drawImage(imgHidden, 0, 0, 900, 900);
+            ctxHidden.drawImage(imgHidden, 0, 0, 512, 512);
         }
 
     }
@@ -241,13 +241,13 @@ export const Board = () => {
                         <div className="text-center md: pl-10"><h1 className='font-mono text-lg text-yellow-400 pt-1'>Branding</h1></div>
                         <canvas
                             ref={hiddenCanvas}
-                            width='900px'
-                            height='900px'
+                            width='512px'
+                            height='512px'
                             className='hidden' />
                     </div>
                     {/* canvas div ends */}
                     {/* Stats div*/}
-                    <div className='grow border-dashed border-4 border-slate-500 p-3 pl-5 m-1 text-left col-span-1 w-80 md:mt-10 lg:mt-2 mt-10 sm:mt-10 text-sm' style={{ height: "23rem" }}>
+                    <div className='grow border-dashed border-4 border-slate-500 p-3 pl-5 m-1 text-left col-span-1 w-80 md:mt-10 lg:mt-2 mt-10 sm:mt-10 text-sm' style={{ height: "23rem", width: "23rem" }}>
                         {/* Individual Stats */}
                         <div className='font-mono text-white list-none flex'>
                             <div className={`text-${(walletTraits.includes(`${chosenTrait.UnnamedNFTID}`)) ? "spot-yellow" : "[red]"} font-bold pr-3`}>UnnamedNFT: </div>
