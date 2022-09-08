@@ -3024,7 +3024,8 @@ import image3023 from './unnamedImages/3023.png'
 import image3024 from './unnamedImages/3024.png'
 import image3025 from './unnamedImages/3025.png'
 import image3026 from './unnamedImages/3026.png'
-
+import image3027 from './unnamedImages/3027.png'
+import image3028 from './unnamedImages/3028.png'
 
 
 const traits = [
@@ -3233,6 +3234,22 @@ const traits = [
     image: image3026,
     brand: 'Them',
     nftName: 'Them',
+    traitType: 'Branding',
+    rarity: 'Common'
+  },
+  {
+    id: 3027,
+    image: image3027,
+    brand: 'SCRIBBLE WARLOCK',
+    nftName: 'SCRIBBLE WARLOCK',
+    traitType: 'Branding',
+    rarity: 'Common'
+  },
+  {
+    id: 3028,
+    image: image3028,
+    brand: 'SCRIBBLE WARLOCK',
+    nftName: 'SCRIBBLE WARLOCK',
     traitType: 'Branding',
     rarity: 'Common'
   },
