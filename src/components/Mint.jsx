@@ -34,22 +34,42 @@ function Mint(props) {
   }
 
   async function isApprovedForAll() {
-    await Moralis.enableWeb3();
+    const approvedForAll = {
+      chain: "avalanche",
+      address: "0x6BDAd2A83a8e70F459786a96a0a9159574685c0e",
+      function_name: "isApprovedForAll",
+      abi: unnamedAbi,
+      params: {
+        owner: userAddress,
+        operator: "0xB043aaEb4337EA4BbB20C2ec5D846b00a0825ba5"
+      },
+    };
+    const areYouApproved = await Moralis.Web3API.native.runContractFunction(
+      approvedForAll
+    );
+    setIsApproved(areYouApproved);
+
+
+    /*await Moralis.enableWeb3();
     const sendOptions = {
       contractAddress: "0x6BDAd2A83a8e70F459786a96a0a9159574685c0e", //unnamed mainnet
       functionName: "isApprovedForAll",
       abi: unnamedAbi,
-
+  
       params: {
         owner: userAddress,
         operator: "0xB043aaEb4337EA4BbB20C2ec5D846b00a0825ba5",
       },
     };
     await Moralis.executeFunction(sendOptions);
-
-    // setIsApproved(true);
+  
+    // setIsApproved(true);*/
   }
+  useEffect(() => {
+    isApprovedForAll();
+  }, []);
 
+  console.log(isApproved, userAddress)
 
 
 
@@ -59,7 +79,7 @@ function Mint(props) {
     }
     else setIsApproved(true)
   }
-*/
+  */
   async function mintMyNFT() {
 
     setIsLoading(true)
@@ -258,11 +278,12 @@ function Mint(props) {
 
   /*useEffect(() => {
     checkApproval();
-
+   
   }, [])
-*/
+  */
   async function setApproval() {
-    let options = {
+    await Moralis.enableWeb3();
+    const options = {
       contractAddress: "0x6BDAd2A83a8e70F459786a96a0a9159574685c0e", //unnamedNFT mainnet
       functionName: "setApprovalForAll",
       abi: unnamedAbi,
@@ -274,7 +295,9 @@ function Mint(props) {
     await contractProcessor.fetch({
       params: options,
     });
-
+    const transaction = await Moralis.executeFunction(options);
+    await transaction.wait()
+    isApprovedForAll();
   }
 
   if (isLoading) {
@@ -292,16 +315,17 @@ function Mint(props) {
     return (
 
       <div className="flex">
-
-        <button className="m-1 rounded-lg px-1 py-1 border-2 border-gray-200 text-gray-200
+        <div className={isApproved ? "hidden" : "flex"}>
+          <button className="m-1 rounded-lg px-1 py-1 border-2 border-gray-200 text-gray-200
      hover:bg-gray-200 hover:text-gray-900 duration-300 font-mono font-bold text-base" onClick={setApproval}>Approve Unnamed</button>
-
-        <button className="m-1 rounded-lg px-1 py-1 border-2 border-gray-200 text-gray-200
+        </div>
+        <div className={isApproved ? "flex" : "hidden"}>
+          <button className="m-1 rounded-lg px-1 py-1 border-2 border-gray-200 text-gray-200
      hover:bg-gray-200 hover:text-gray-900 duration-300 font-mono font-bold text-base" onClick={mintMyNFT}>Mint (0.2)</button>
 
-        <button className="m-1 rounded-lg px-1 py-1 border-2 border-gray-200 text-gray-200
+          <button className="m-1 rounded-lg px-1 py-1 border-2 border-gray-200 text-gray-200
      hover:bg-gray-200 hover:text-gray-900 duration-300 font-mono font-bold text-base" onClick={spotMintMyNFT}>Spot Holder Mint (0)</button>
-
+        </div>
 
 
 

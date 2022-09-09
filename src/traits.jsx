@@ -3026,6 +3026,9 @@ import image3025 from './unnamedImages/3025.png'
 import image3026 from './unnamedImages/3026.png'
 import image3027 from './unnamedImages/3027.png'
 import image3028 from './unnamedImages/3028.png'
+import image3029 from './unnamedImages/3029.png'
+import image3030 from './unnamedImages/3030.png'
+
 
 
 const traits = [
@@ -3250,6 +3253,22 @@ const traits = [
     image: image3028,
     brand: 'SCRIBBLE WARLOCK',
     nftName: 'SCRIBBLE WARLOCK',
+    traitType: 'Branding',
+    rarity: 'Common'
+  },
+  {
+    id: 3029,
+    image: image3029,
+    brand: 'MetaPep',
+    nftName: 'MetaPep',
+    traitType: 'Branding',
+    rarity: 'Common'
+  },
+  {
+    id: 3030,
+    image: image3030,
+    brand: 'MetaPep',
+    nftName: 'MetaPep',
     traitType: 'Branding',
     rarity: 'Common'
   },
