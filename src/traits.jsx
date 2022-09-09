@@ -3259,16 +3259,16 @@ const traits = [
   {
     id: 3029,
     image: image3029,
-    brand: 'MetaPep',
-    nftName: 'MetaPep',
+    brand: 'Metapep',
+    nftName: 'Metapep',
     traitType: 'Branding',
     rarity: 'Common'
   },
   {
     id: 3030,
     image: image3030,
-    brand: 'MetaPep',
-    nftName: 'MetaPep',
+    brand: 'Metapep',
+    nftName: 'Metapep',
     traitType: 'Branding',
     rarity: 'Common'
   },
