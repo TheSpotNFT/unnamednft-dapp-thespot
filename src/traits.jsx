@@ -3028,6 +3028,10 @@ import image3027 from './unnamedImages/3027.png'
 import image3028 from './unnamedImages/3028.png'
 import image3029 from './unnamedImages/3029.png'
 import image3030 from './unnamedImages/3030.png'
+import image3031 from './unnamedImages/3031.png'
+import image3032 from './unnamedImages/3032.png'
+import image3033 from './unnamedImages/3033.png'
+import image3034 from './unnamedImages/3034.png'
 
 
 
@@ -3269,6 +3273,38 @@ const traits = [
     image: image3030,
     brand: 'Metapep',
     nftName: 'Metapep',
+    traitType: 'Branding',
+    rarity: 'Common'
+  },
+  {
+    id: 3031,
+    image: image3031,
+    brand: 'Neko Friends',
+    nftName: 'Neko Friends',
+    traitType: 'Branding',
+    rarity: 'Common'
+  },
+  {
+    id: 3032,
+    image: image3032,
+    brand: 'Neko Friends',
+    nftName: 'Neko Friends',
+    traitType: 'Branding',
+    rarity: 'Common'
+  },
+  {
+    id: 3033,
+    image: image3033,
+    brand: 'Neko Friends',
+    nftName: 'Neko Friends',
+    traitType: 'Branding',
+    rarity: 'Common'
+  },
+  {
+    id: 3034,
+    image: image3034,
+    brand: 'Neko Friends',
+    nftName: 'Neko Friends',
     traitType: 'Branding',
     rarity: 'Common'
   },
