@@ -3040,6 +3040,9 @@ import image3039 from './unnamedImages/3039.png'
 import image3040 from './unnamedImages/3040.png'
 import image3041 from './unnamedImages/3041.png'
 import image3042 from './unnamedImages/3042.png'
+import image3043 from './unnamedImages/3043.png'
+import image3044 from './unnamedImages/3044.png'
+
 
 
 const traits = [
@@ -3376,6 +3379,22 @@ const traits = [
     image: image3042,
     brand: 'Hamburgers4all',
     nftName: 'Hamburgers4all',
+    traitType: 'Branding',
+    rarity: 'Common'
+  },
+  {
+    id: 3043,
+    image: image3043,
+    brand: 'Line Monkeys',
+    nftName: 'Line Monkeys',
+    traitType: 'Branding',
+    rarity: 'Common'
+  },
+  {
+    id: 3044,
+    image: image3044,
+    brand: 'Line Monkeys',
+    nftName: 'Line Monkeys',
     traitType: 'Branding',
     rarity: 'Common'
   },
