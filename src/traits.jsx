@@ -3034,7 +3034,12 @@ import image3033 from './unnamedImages/3033.png'
 import image3034 from './unnamedImages/3034.png'
 import image3035 from './unnamedImages/3035.png'
 import image3036 from './unnamedImages/3036.png'
-
+import image3037 from './unnamedImages/3037.png'
+import image3038 from './unnamedImages/3038.png'
+import image3039 from './unnamedImages/3039.png'
+import image3040 from './unnamedImages/3040.png'
+import image3041 from './unnamedImages/3041.png'
+import image3042 from './unnamedImages/3042.png'
 
 
 const traits = [
@@ -3323,6 +3328,54 @@ const traits = [
     image: image3036,
     brand: 'MONKEEZ 475',
     nftName: 'MONKEEZ 475',
+    traitType: 'Branding',
+    rarity: 'Common'
+  },
+  {
+    id: 3037,
+    image: image3037,
+    brand: 'Hamburgers4all',
+    nftName: 'Hamburgers4all',
+    traitType: 'Branding',
+    rarity: 'Common'
+  },
+  {
+    id: 3038,
+    image: image3038,
+    brand: 'Hamburgers4all',
+    nftName: 'Hamburgers4all',
+    traitType: 'Branding',
+    rarity: 'Common'
+  },
+  {
+    id: 3039,
+    image: image3039,
+    brand: 'Hamburgers4all',
+    nftName: 'Hamburgers4all',
+    traitType: 'Branding',
+    rarity: 'Common'
+  },
+  {
+    id: 3040,
+    image: image3040,
+    brand: 'Hamburgers4all',
+    nftName: 'Hamburgers4all',
+    traitType: 'Branding',
+    rarity: 'Common'
+  },
+  {
+    id: 3041,
+    image: image3041,
+    brand: 'Hamburgers4all',
+    nftName: 'Hamburgers4all',
+    traitType: 'Branding',
+    rarity: 'Common'
+  },
+  {
+    id: 3042,
+    image: image3042,
+    brand: 'Hamburgers4all',
+    nftName: 'Hamburgers4all',
     traitType: 'Branding',
     rarity: 'Common'
   },
