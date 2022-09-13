@@ -3032,6 +3032,8 @@ import image3031 from './unnamedImages/3031.png'
 import image3032 from './unnamedImages/3032.png'
 import image3033 from './unnamedImages/3033.png'
 import image3034 from './unnamedImages/3034.png'
+import image3035 from './unnamedImages/3035.png'
+import image3036 from './unnamedImages/3036.png'
 
 
 
@@ -3305,6 +3307,22 @@ const traits = [
     image: image3034,
     brand: 'Neko Friends',
     nftName: 'Neko Friends',
+    traitType: 'Branding',
+    rarity: 'Common'
+  },
+  {
+    id: 3035,
+    image: image3035,
+    brand: 'ABSTRACT',
+    nftName: 'ABSTRACT',
+    traitType: 'Branding',
+    rarity: 'Common'
+  },
+  {
+    id: 3036,
+    image: image3036,
+    brand: 'MONKEEZ 475',
+    nftName: 'MONKEEZ 475',
     traitType: 'Branding',
     rarity: 'Common'
   },
