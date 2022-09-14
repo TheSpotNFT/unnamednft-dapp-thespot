@@ -148,33 +148,18 @@ function Mint(props) {
         uri: metaDataUrl,
       },
     };
-    const transaction = await Moralis.executeFunction(sendOptions);
-    await transaction.wait()
-    alert(`Minted Successfully! Txn Hash: ${transaction.hash}`)
-
-
-
-    const mintResult = await mintFetch({
-      params: {
-        abi: unnamedNFTBrandingAbi,
-        contractAddress: "0xB043aaEb4337EA4BbB20C2ec5D846b00a0825ba5",
-        functionName: "mint",
-        params: {
-          unnamedId: props.unnamedID,
-          uri: metaDataUrl,
-        },
-      },
+    const transaction = await contractProcessor.fetch({
+      params: sendOptions,
       onError: (err) => {
-        setIsLoading(false)
+        setIsLoading(false);
         alert(JSON.stringify(err.data.message));
-
-
       },
       onSuccess: (tx) => {
-        tx.wait(2).then(alert("Minted successfully! View your NFT on Kalao or Campfire!"))
+        tx.wait(5)
+          .then(alert("Minted Successfully! View your NFT on Campfire, Kalao or Joepegs!"))
           .then(setIsLoading(false))
-          .then(console.log(tx))
-      }
+          .then(console.log(tx));
+      },
     });
 
   }
