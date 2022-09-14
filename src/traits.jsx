@@ -3042,6 +3042,7 @@ import image3041 from './unnamedImages/3041.png'
 import image3042 from './unnamedImages/3042.png'
 import image3043 from './unnamedImages/3043.png'
 import image3044 from './unnamedImages/3044.png'
+import image3045 from './unnamedImages/3045.png'
 
 
 
@@ -3319,14 +3320,6 @@ const traits = [
     rarity: 'Common'
   },
   {
-    id: 3035,
-    image: image3035,
-    brand: 'ABSTRACT',
-    nftName: 'ABSTRACT',
-    traitType: 'Branding',
-    rarity: 'Common'
-  },
-  {
     id: 3036,
     image: image3036,
     brand: 'MONKEEZ 475',
@@ -3395,6 +3388,14 @@ const traits = [
     image: image3044,
     brand: 'Line Monkeys',
     nftName: 'Line Monkeys',
+    traitType: 'Branding',
+    rarity: 'Common'
+  },
+  {
+    id: 3045,
+    image: image3045,
+    brand: 'Tacos',
+    nftName: 'Tacos',
     traitType: 'Branding',
     rarity: 'Common'
   },
