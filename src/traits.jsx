@@ -3044,7 +3044,7 @@ import image3043 from './unnamedImages/3043.png'
 import image3044 from './unnamedImages/3044.png'
 import image3045 from './unnamedImages/3045.png'
 import image3046 from './unnamedImages/3046.png'
-
+import image3047 from './unnamedImages/3047.png'
 
 const traits = [
   {
@@ -3404,6 +3404,14 @@ const traits = [
     image: image3046,
     brand: 'Goatd',
     nftName: 'Goatd',
+    traitType: 'Branding',
+    rarity: 'Common'
+  },
+  {
+    id: 3047,
+    image: image3047,
+    brand: '$bCASH',
+    nftName: '$bCASH',
     traitType: 'Branding',
     rarity: 'Common'
   },
