@@ -57,7 +57,7 @@ export const Board = () => {
 
     //Set an array of save UnnamedNFT traits which are unburnable and available to all.
     const start = 3001;
-    const end = 3050;
+    const end = 3099;
     const branding = [...Array(end - start + 1).keys()].map(x => x + start);
 
     {/* For retrieval of traits */ }

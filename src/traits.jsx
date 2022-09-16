@@ -3045,6 +3045,10 @@ import image3044 from './unnamedImages/3044.png'
 import image3045 from './unnamedImages/3045.png'
 import image3046 from './unnamedImages/3046.png'
 import image3047 from './unnamedImages/3047.png'
+import image3048 from './unnamedImages/3048.png'
+import image3049 from './unnamedImages/3049.png'
+import image3050 from './unnamedImages/3050.png'
+import image3051 from './unnamedImages/3051.png'
 
 const traits = [
   {
@@ -3415,6 +3419,39 @@ const traits = [
     traitType: 'Branding',
     rarity: 'Common'
   },
+  {
+    id: 3048,
+    image: image3048,
+    brand: 'AVAXolotls',
+    nftName: 'AVAXolotls',
+    traitType: 'Branding',
+    rarity: 'Common'
+  },
+  {
+    id: 3049,
+    image: image3049,
+    brand: 'HODL Co.',
+    nftName: '$bCASH',
+    traitType: 'Branding',
+    rarity: 'Common'
+  },
+  {
+    id: 3050,
+    image: image3050,
+    brand: 'Beeg Rock',
+    nftName: 'Beeg Rock',
+    traitType: 'Branding',
+    rarity: 'Common'
+  },
+  {
+    id: 3051,
+    image: image3051,
+    brand: 'Peons',
+    nftName: 'Peons',
+    traitType: 'Branding',
+    rarity: 'Common'
+  },
+
 
   { id: 1, image: image1, nftName: 'UnnamedNFT', traitType: 'UnnamedNFT', },
   { id: 2, image: image2, nftName: 'UnnamedNFT', traitType: 'UnnamedNFT', },
