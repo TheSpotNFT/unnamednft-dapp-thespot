@@ -16,7 +16,24 @@ export const Board = () => {
     const unnamedNFTContract = "0x6bdad2a83a8e70f459786a96a0a9159574685c0e";
     const spotNFTContract = '0x0C6945E825fc3c80F0a1eA1d3E24d6854F7460d8';
     const [filter, setFilter] = useState('');
+    const [showButton, setShowButton] = useState(false);
 
+    useEffect(() => {
+        window.addEventListener("scroll", () => {
+            if (window.pageYOffset > 300) {
+                setShowButton(true);
+            } else {
+                setShowButton(false);
+            }
+        });
+    }, []);
+
+    const scrollToTop = () => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth' // for smoothly scrolling
+        });
+    };
     //For Metadata
     const [unnamedBackGround, setUnnamedBackGround] = useState();
     const [unnamedEyes, setUnnamedEyes] = useState();
@@ -336,6 +353,13 @@ export const Board = () => {
                     <div className="p-10 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-4 xl:grid-cols-6 gap-5 font-mono text-spot-yellow">
                         {ownedCards ? ownedFilter.map(createCard) : dataSearch.map(createCard)}
                     </div></div>
+                <div>
+                    {showButton && (
+                        <button onClick={scrollToTop} className="back-to-top">
+                            &#8679;
+                        </button>
+                    )}
+                </div>
                 {/*} <div className="text-white">BackGround: {unnamedData[`${(chosenTrait.UnnamedNFTID - 1)}`].attributes[0].value}</div>
                 <div className="text-white">Eyes: {unnamedData[`${(chosenTrait.UnnamedNFTID - 1)}`].attributes[1].value}</div>
                 <div className="text-white">Mouth: {unnamedData[`${(chosenTrait.UnnamedNFTID - 1)}`].attributes[2].value}</div>

@@ -1,3 +1,20 @@
+.back-to-top {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  font-size: 80px;
+  background: rgb(51, 65, 85);
+  color: white;
+  cursor: pointer;
+  border-radius: 100px;
+  border: none;
+
+}
+
+.back-to-top:hover {
+  background: yellow;
+}
+
 .App {
   text-align: center;
 }
@@ -32,6 +49,7 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
