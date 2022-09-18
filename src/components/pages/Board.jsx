@@ -356,7 +356,7 @@ export const Board = () => {
                 <div>
                     {showButton && (
                         <button onClick={scrollToTop} className="back-to-top">
-                            &#8679;
+                            &#94;
                         </button>
                     )}
                 </div>
