@@ -3049,6 +3049,8 @@ import image3048 from './unnamedImages/3048.png'
 import image3049 from './unnamedImages/3049.png'
 import image3050 from './unnamedImages/3050.png'
 import image3051 from './unnamedImages/3051.png'
+import image3052 from './unnamedImages/3052.png'
+import image3053 from './unnamedImages/3053.png'
 
 const traits = [
   {
@@ -3451,6 +3453,23 @@ const traits = [
     traitType: 'Branding',
     rarity: 'Common'
   },
+  {
+    id: 3052,
+    image: image3052,
+    brand: 'Happy Sun',
+    nftName: 'Happy Sun',
+    traitType: 'Branding',
+    rarity: 'Common'
+  },
+  {
+    id: 3053,
+    image: image3053,
+    brand: 'Doodleverse',
+    nftName: 'Doodleverse',
+    traitType: 'Branding',
+    rarity: 'Common'
+  },
+
 
 
   { id: 1, image: image1, nftName: 'UnnamedNFT', traitType: 'UnnamedNFT', },
