@@ -3051,6 +3051,7 @@ import image3050 from './unnamedImages/3050.png'
 import image3051 from './unnamedImages/3051.png'
 import image3052 from './unnamedImages/3052.png'
 import image3053 from './unnamedImages/3053.png'
+import image3054 from './unnamedImages/3054.png'
 
 const traits = [
   {
@@ -3466,6 +3467,14 @@ const traits = [
     image: image3053,
     brand: 'Doodleverse',
     nftName: 'Doodleverse',
+    traitType: 'Branding',
+    rarity: 'Common'
+  },
+  {
+    id: 3054,
+    image: image3054,
+    brand: 'Moo!',
+    nftName: 'Moo!',
     traitType: 'Branding',
     rarity: 'Common'
   },
