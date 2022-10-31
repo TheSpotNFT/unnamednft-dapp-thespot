@@ -33,39 +33,11 @@ function App() {
         (chainId !== '0xa86a')&&switchNetwork("0xa86a")
   }, [isAuthenticated, isWeb3Enabled, chain]);
 
-   if (!isAuthenticated || account===null) {
-      
+
       return (
         <Authenticate />
       );
-    }
-  
-    return (
-      <div className='App bg-slate-900'>
-      <Router>
-      <div className="bg-slate-900 w-full h-100">
-      <Nav />
-      <div className="flex justify-center items-center gap-2">
-      <Routes>
-          <Route path="/" exact element={<Board />} />
-          <Route path="/Home" exact element={<Board />} />
-          <Route path="/roadmap" exact element={<Roadmap />} />
-          <Route path="/team" exact element={<Team />} />
-          <Route path="/ecosystem" exact element={<SpotEcosystem />} />
-        </Routes>
-      </div>
-      
-      </div>
-  
-
-        <div className='footer'>
-        <Footer />
-        </div>
-        
-      </Router> 
-      </div>
-      
-    );
+    
   }
 
 export default App;
